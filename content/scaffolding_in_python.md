@@ -4,12 +4,9 @@ Modified: 2024-07-18
 Category: Articles
 Tags: python, development
 Slug: scaffolding-in-python
-Author: Juan José Farina
+Authors: Juan José Farina, Tomás Vázquez
 Summary: This article is a destiled version of the presentation "Scaffolding for Data Projects in Python" by Juan José Farina and Tomás Vázquez. It provides an overview of scaffolding in Python, including the definition of scaffolding, step-by-step instructions for setting up a Python project, and the use of Cookiecutter for scaffolding.
 Keywords: scaffolding, python, development, engineering, pip, pipx, pipenv, cookiecutter
-
-*Presented by Juan José Farina and Tomás Vázquez*  
-*4th July 2024*
 
 ---
 
