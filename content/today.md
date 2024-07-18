@@ -1,6 +1,6 @@
 Title: Scaffolding for Data Projects in Python
-Date: 2024-07-13
-Modified: 2024-07-13
+Date: 2024-07-04
+Modified: 2024-07-18
 Category: Articles
 Tags: python, development
 Slug: scaffolding-in-python
