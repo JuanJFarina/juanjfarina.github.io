@@ -19,10 +19,6 @@ jobs:
           pipenv install
       - name: Build site
         run: pipenv run pelican content -s publishconf.py -o output
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - name: Fix permissions
         run: |
           chmod -c -R +rX output | while read line; do
