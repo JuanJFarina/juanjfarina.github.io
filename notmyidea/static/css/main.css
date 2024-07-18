@@ -107,7 +107,14 @@ dl {margin: 0 0 1.5em 0;}
 dt {font-weight: bold;}
 dd {margin-left: 1.5em;}
 
-pre{background-color: #f00; padding: 10px; color: #f00; margin: 10px; overflow: auto;}
+pre{
+	background-color: #ddd;
+	padding: 10px;
+	color: #000;
+	margin: 10px;
+	overflow: auto;
+	border-radius: 4px;
+}
 
 /* Quotes */
 blockquote {

@@ -1,22 +1,23 @@
 Title: Resume
 Date: 2024-07-12
 
-## Juan Jose Farina: Software Engineer
-
----
-
 **Contact Information:**
+
 - **Address:** Rosario, S2000, Argentina
+
 - **Email:** [juanjosefarina.jjf@gmail.com](mailto:juanjosefarina.jjf@gmail.com)
+
 - **LinkedIn:** [https://linkedin.com/in/juanjosefarina](https://linkedin.com/in/juanjosefarina)
+
 - **Phone:** +543413200048
+
 - **GitHub:** [https://github.com/juanjfarina](https://github.com/juanjfarina)
 
 ---
 
 ### Summary
 
-I am an MLOps Engineer at PwC since September 2023, with a background in full-stack web development at Academia Rosario Ballet and No Country. I have been developing hobby apps since 2010, when I studied “Computer Systems Analyst.” I am a Mensa member, a 4 kyu in Codewars (top 9%), and hold a C2 proficiency in English.
+I am an MLOps Engineer at PwC since September 2023, with a background in full-stack web development at Academia Rosario Ballet and No Country. I have been developing hobby apps since 2010, when I studied “Computer Systems Analyst.” I am a [Mensa member](https://drive.google.com/file/d/1rnJBlSn5EryF4wulDcgf7s8bkNZlXaQY/view?usp=sharing), a [4 kyu in Codewars](https://www.codewars.com/users/JuanJFarina) (top 9%), and hold a [C2 proficiency in English](https://cert.efset.org/3hoLGW).
 
 ---
 
@@ -58,28 +59,29 @@ In 2023, I developed full-stack web applications for Academia Rosario Ballet and
 ---
 
 ### Professional Certifications
+*(longer than 200 hours)*
 
-- **Machine Learning** | Stanford University | 2024-03-30
-- **ML Engineering for Prod. (MLOps)** | DeepLearning.AI | 2023-09-29
-- **Front-End Developer** | Meta | 2023-05-27
-- **Back End Development and APIs** | FreeCodeCamp | 2023-05-25
-- **Front End Development Libraries** | FreeCodeCamp | 2023-04-04
+- **[Machine Learning](https://www.coursera.org/account/accomplishments/specialization/certificate/6P633HEMLU2V)** | Stanford University | 2024-03-30
+- **[ML Engineering for Prod. (MLOps)](https://www.coursera.org/account/accomplishments/specialization/certificate/5LN4L4SX7BZQ)** | DeepLearning.AI | 2023-09-29
+- **[Front-End Developer](https://www.coursera.org/account/accomplishments/professional-cert/XHLVFS8R76BK)** | Meta | 2023-05-27
+- **[Back End Development and APIs](https://www.freecodecamp.org/certification/JJFarina/back-end-development-and-apis)** | FreeCodeCamp | 2023-05-25
+- **[Front End Development Libraries](https://www.freecodecamp.org/certification/JJFarina/front-end-development-libraries)** | FreeCodeCamp | 2023-04-04
 
 ---
 
-### Courses
+### Other certifications and courses
 
-- **Linear Algebra for ML and DS** | DeepLearning.AI | 2023-09-19
-- **English C2 Proficient** | EF-SET | 2023-08-16
-- **Reactive Microservices** | IBM | 2023-08-09
-- **AI and Public Health** | DeepLearning.AI | 2023-07-07
-- **Docker for Developers** | LinkedIn Learning | 2023-06-24
-- **Development & Engineering** | Accenture | 2023-06-13
-- **Developer Experience Program** | Accenture | 2023-06-12
-- **Agile Development and Scrum** | IBM | 2023-05-23
-- **Introduction to Cloud Computing** | IBM | 2023-05-19
-- **Introduction to DevOps** | IBM | 2023-05-18
-- **User Experience (UX) Design** | Google | 2023-04-28
+- **[Linear Algebra for ML and DS](https://www.coursera.org/account/accomplishments/certificate/3B7GRFYRAPBY)** | DeepLearning.AI | 2023-09-19
+- **[English C2 Proficient](https://www.efset.org/cert/3hoLGW)** | EF-SET | 2023-08-16
+- **[Reactive Microservices](https://courses.cognitiveclass.ai/certificates/f2eca775f9b247cdb805bc88609a134c)** | IBM | 2023-08-09
+- **[AI and Public Health](https://www.coursera.org/account/accomplishments/certificate/AGDMLT4HZ22R)** | DeepLearning.AI | 2023-07-07
+- **[Docker for Developers](https://www.linkedin.com/learning/certificates/0de5c36151209f6b58d0de8bdd108bab35c6ebbcd267fb1eed69c42cfdada557?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bgh1LIUzjRf2pKnQv2AKZuA%3D%3D)** | LinkedIn Learning | 2023-06-24
+- **[Development & Engineering](https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/XvvYRvb2YpfkyA52H_Accenture%20North%20America_e2Rx4XtHZJKt7k69z_1686627731957_completion_certificate.pdf)** | Accenture | 2023-06-13
+- **[Developer Experience Program](https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20Nordics/PxenP4rHNE6Bh4nQz_Accenture%20Nordics_e2Rx4XtHZJKt7k69z_1686578859502_completion_certificate.pdf)** | Accenture | 2023-06-12
+- **[Agile Development and Scrum](https://www.coursera.org/account/accomplishments/certificate/4SGDEW532JEA)** | IBM | 2023-05-23
+- **[Introduction to Cloud Computing](https://www.coursera.org/account/accomplishments/certificate/H7JPBP9WAWA8)** | IBM | 2023-05-19
+- **[Introduction to DevOps](https://www.coursera.org/account/accomplishments/certificate/U6G5BLQBHDRX)** | IBM | 2023-05-18
+- **[User Experience (UX) Design](https://www.coursera.org/account/accomplishments/certificate/ZSH5D8Z7DT7T)** | Google | 2023-04-28
 - **Java Developer Advanced** | Polo Tecnológico Rosario | 2012
 - **Java Laboratory** | Neoris | 2012
 - **Java Basic** | CCI-FAGDUT | 2011
