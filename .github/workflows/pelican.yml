@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
+    name: Build and deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -17,8 +18,12 @@ jobs:
         run: |
           pip install pipenv
           pipenv install
+      - name: Check content directory
+        run: ls -R content
       - name: Build site
         run: pipenv run pelican content -s publishconf.py -o output
+      - name: Check output directory
+        run: ls -R output
       - name: Fix permissions
         run: |
           chmod -c -R +rX output | while read line; do
