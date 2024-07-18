@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install pipenv
-          pipenv Install
+          pipenv install
       - name: Build site
         run: pipenv run pelican content -s publishconf.py -o output
   deploy:
