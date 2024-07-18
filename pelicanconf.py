@@ -1,6 +1,6 @@
 AUTHOR = 'Juan José Farina'
 SITENAME = 'Juan José Farina'
-SITEURL = ""
+SITEURL = "https://juanjfarina.github.io"
 SITESUBTITLE = "Software Engineer"
 
 PATH = "content"
