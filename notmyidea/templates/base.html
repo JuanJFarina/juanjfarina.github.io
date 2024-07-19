@@ -3,7 +3,15 @@
 <head>
         <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="keywords" content="blog, personal website, development, engineering, computer science, python, mlops, ai, javascript" />
+        <meta name="description" content="Juan José Farina's personal website and blog" />
+        <meta name="author" content="Juan José Farina" />
+        <meta name="copyright" content="Juan José Farina" />
+        <meta name="robots" content="index" />
+        <meta name="robots" content="follow"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.jpeg" />
+        <link rel="canonical" href="https://juanjfarina.github.io" />
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
         <link href="{{ SITEURL }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
         {% if FEED_RSS %}
