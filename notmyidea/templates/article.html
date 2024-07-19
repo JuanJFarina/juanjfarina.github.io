@@ -9,7 +9,6 @@
         <div class="entry-content">
         {% include 'article_infos.html' %}<!-- /.post-info -->
         {{ article.content }}
-        {% if article.share_post and article.status != 'draft' %}
         <section>
           <p id="post-share-links">
             Share on
@@ -19,7 +18,6 @@
             <a href="{{article.share_post['twitter']}}" title="Share on Twitter">Twitter</a>
           </p>
         </section>
-        {% endif %}
         </div><!-- /.entry-content -->
         {% if DISQUS_SITENAME %}
         <div class="comments">
