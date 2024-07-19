@@ -5,12 +5,13 @@
 
         {% if article.author %}
         <address class="vcard author">
-                By {% if article.authors %}{% for author in article.authors %}<a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{{ "and" if not loop.last else "" }}{% endfor %}
+                <p>{{ article.ert }} mins to read</p>
+                By{% if article.authors %}{% for author in article.authors %}<a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{{ "and" if not loop.last else "" }}{% endfor %}
                 {% else %}<a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
                 {% endif %}
         </address>
         {% endif %}
-<p>In <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>. {% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">get the pdf</a>{% endif %}</p>
+<p>In<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>{% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">get the pdf</a>{% endif %}</p>
 {% include 'taglist.html' %}
 {% include 'translations.html' %}
 </footer><!-- /.post-info -->

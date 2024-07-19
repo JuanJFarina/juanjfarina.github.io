@@ -5,6 +5,12 @@ SITESUBTITLE = "Software Engineer"
 
 PATH = "content"
 
+PLUGIN_PATHS = ["plugins"]
+PLUGINS=['pelican-ert']
+
+ERT_WPM = 170  # words per minute by default
+ERT_FORMAT = '{min_time}-{max_time}'
+
 TIMEZONE = 'Europe/Rome'
 
 DEFAULT_LANG = 'en'
