@@ -9,10 +9,11 @@
                 <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url
                 }}">{{ article.title }}</a></h1>
                 {% include 'article_infos.html' %}<!-- /.post-info -->
-                {{ article.content }}
+                {{ article.summary }}
+                <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">read more</a><br><br>
         </article></aside><!-- /#featured -->
         {% if loop.length  > 1 %}
-                <h1>Other articles</h1>
+                <h1>Latest articles</h1>
                 <hr />
                     <ol id="posts-list" class="hfeed">
         {% endif %}
