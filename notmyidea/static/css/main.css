@@ -93,8 +93,18 @@ ol {
 
 .post-info {
     float:right;
-    margin:10px;
-    padding:5px;
+    margin:15px;
+    padding:10px;
+	border-top: #000 solid 1px;
+	border-left: #000 solid 2px;
+	border-right: #000 solid 6px;
+	border-bottom: #000 solid 8px;
+	border-radius: 2px;
+	/* border: rgba(0,0,0,0.2) solid 1px;
+	border-radius: 10px; */
+	word-wrap: break-word;
+	/* text-overflow: ellipsis;
+	overflow: hidden; */
 }
 
 .post-info p{
@@ -461,6 +471,16 @@ p code, li code {
 	background-color: rgba(0,0,0,0.2);
 	padding: 1px 5px;
 	border-radius: 2px;
+}
+
+#post-share-links {
+	text-align: right;
+	border-top: #000 solid 1px;
+	border-left: #000 solid 2px;
+	border-right: #000 solid 6px;
+	border-bottom: #000 solid 8px;
+	border-radius: 2px;
+	padding: 5px;
 }
 
 /* Global adjustments for smaller screens */

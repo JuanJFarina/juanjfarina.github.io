@@ -6,7 +6,7 @@ SITESUBTITLE = "Software Engineer"
 PATH = "content"
 
 PLUGIN_PATHS = ["plugins"]
-PLUGINS=['pelican-ert']
+PLUGINS=['pelican-ert', 'share_post']
 
 ERT_WPM = 170  # words per minute by default
 ERT_FORMAT = '{min_time}-{max_time}'
