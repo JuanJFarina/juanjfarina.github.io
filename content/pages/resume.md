@@ -1,6 +1,8 @@
 Title: Resume
 Date: 2024-07-12
 
+---
+
 **Contact Information:**
 
 - **Address:** Rosario, S2000, Argentina
