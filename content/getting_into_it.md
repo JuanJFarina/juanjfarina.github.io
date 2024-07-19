@@ -46,7 +46,7 @@ Many things are not said about LinkedIn, and since the information is long, I wi
 - Highlight your Portfolio, Resume, and GitHub. Your first section should be "Featured" with these three elements.
 - Make a BRIEF description. The trend is towards shorter times, so don't expect someone to want to read 15 lines of text. Stay concise and describe yourself as a professional in 6 lines or less.
 - Complete your profile. Upload your educational, work experiences, and certifications; stay concise but add all relevant data.
-- Add your skills, validate them, and take assessments. People who pass assessments stand out more than those who don't, and people with more validations stand out more than those with fewer, so if you want recruiters to find you, complete the assessments and get validations from colleagues.
+- Add your skills and validate them. People with more validations stand out more than those with fewer, so if you want recruiters to find you, get validations from colleagues.
 - Set job alerts with Boolean strings. A good idea is to follow this template: "(trainee OR entry OR junior OR jr) AND (frontend OR backend OR fullstack OR developer OR desarrollador OR software) AND (javascript OR react OR angular)" (without quotes). That is, (seniority) AND (position) AND (languages/technologies), and set job alerts in your country (don't filter by remote, on-site, etc.) and in other countries (only remote).
 - Add relevant contacts. Contacts are very important as they make you visible on the platform. If you have few contacts, you won't appear to recruiters. Try adding recruiters and/or people in your area, especially if they have many contacts. Also, try to send a note whenever you can, being friendly and thinking about establishing a good professional relationship (not just asking for a job).
 - Follow all relevant companies. This will help LinkedIn show you better job recommendations, and it is also advisable to check job openings on the companies' pages, as not all vacancies appear in regular searches.
@@ -64,9 +64,10 @@ Following all the above explanations, the resume should follow these general gui
   - Writing with task lists and numerical facts: this is good writing that shows truths about you as a professional.
   - Writing with IMPACT: if you can turn the numbers and lists into the IMPACT of your work, into what your good performance generated, this is the winning writing (always being concise).
 
-Remember, no one expects a person without experience to be an expert in their field, so forget about trying to demonstrate that if you don't have verifiable experience or real applications used by real users. What you want to show is constant study and work, ensuring companies that from day one, you will be giving your best to become a valuable team member.
+Remember, no one expects a person without experience to be an expert in their field, so forget about trying to demonstrate that if you don't have verifiable experience or real applications used by real users. What you want to show is constant study and work, that you've made progress and keep on doing so, ensuring companies that from day one, you will be giving your best to become a valuable team member.
 
 ### About English
+*For none english speakers*
 Yes, in some companies, English is an important requirement, but this is not the same for all companies. Don't think that you won't get a job because of English; it is more likely that you won't get a job because you stopped studying or doing projects, because you don't have a "good" resume or portfolio, or because you are not using LinkedIn correctly.
 
 ### Important Concepts to Learn
