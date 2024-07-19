@@ -6,19 +6,14 @@ Date: 2024-07-12
 **Contact Information:**
 
 - **Address:** Rosario, S2000, Argentina
-
 - **Email:** [juanjosefarina.jjf@gmail.com](mailto:juanjosefarina.jjf@gmail.com)
-
 - **LinkedIn:** [https://linkedin.com/in/juanjosefarina](https://linkedin.com/in/juanjosefarina)
-
 - **Phone:** +543413200048
-
 - **GitHub:** [https://github.com/juanjfarina](https://github.com/juanjfarina)
 
 ---
 
 ### Summary
-
 I am an MLOps Engineer at PwC since September 2023, with a background in full-stack web development at Academia Rosario Ballet and No Country. I have been developing hobby apps since 2010, when I studied “Computer Systems Analyst.” I am a [Mensa member](https://drive.google.com/file/d/1rnJBlSn5EryF4wulDcgf7s8bkNZlXaQY/view?usp=sharing), a [4 kyu in Codewars](https://www.codewars.com/users/JuanJFarina) (top 9%), and hold a [C2 proficiency in English](https://cert.efset.org/3hoLGW).
 
 ---
@@ -53,10 +48,10 @@ In 2023, I developed full-stack web applications for Academia Rosario Ballet and
 ### Education
 
 - **Advanced Technician in Programming** | Teclab | Oct 2023 - Present
-  - Currently 36% complete. Two-year degree focusing on core software development values, programming fundamentals in C++, databases, AWS cloud computing, user experience, and front-end and back-end development with React and Java.
+Currently 36% complete. Two-year degree focusing on core software development values, programming fundamentals in C++, databases, AWS cloud computing, user experience, and front-end and back-end development with React and Java.
 
 - **Computer Systems Analyst** | Esc. Sup. Urquiza | Mar 2010 - Oct 2011
-  - Completed 67% of the program. Three-year degree covering computer science concepts, front-end and back-end development with JavaScript, PHP, MySQL, computer systems knowledge, analysis, philosophy, and mathematics.
+Completed 67% of the program. Three-year degree covering computer science concepts, front-end and back-end development with JavaScript, PHP, MySQL, computer systems knowledge, analysis, philosophy, and mathematics.
 
 ---
 

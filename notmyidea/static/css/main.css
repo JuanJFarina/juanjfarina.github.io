@@ -21,7 +21,7 @@ body {
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.429;
     margin: 0;
-    padding: 0% 0%;
+    padding: 0% 10%;
     text-align: left;
     max-width: 2000px;
     min-width: 800px;
@@ -333,7 +333,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		.social a[href*='stackoverflow.com']:before {content: url('../images/icons/stackoverflow.png'); margin-right: 2px; vertical-align: -3px;}
 		.social a[href*='rss.xml']:before {content: url('../images/icons/rss.png'); margin-right: 2px; vertical-align: -3px;}
 		.social a[href*='twitter.com']:before {content: url('../images/icons/twitter.png'); margin-right: 2px; vertical-align: -3px;}
-		.social a[href*='linkedin.com']:before {content: url('../images/icons/linkedin.png'); margin-right: 2px; vertical-align: -3px;}
+		/* .social a[href*='linkedin.com']:before {content: url('../images/icons/linkedin.png'); margin-right: 2px; vertical-align: -3px;} */
         .social a[href*='gitorious.org']:before {content: url('../images/icons/gitorious.png'); margin-right: 2px; vertical-align: -3px;}
 
 /*
@@ -455,3 +455,27 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	
 	#add-comment input[type='submit'] {float: right; margin: 0 .5em;}
 	#add-comment * {margin-bottom: .5em;}
+
+/* Global adjustments for smaller screens */
+@media screen and (max-width: 750px) {
+    body {
+        padding: 0% 0%;
+		font-size: 100%;
+		min-width: 300px;
+		max-width: 100vw;
+    }
+	#content {
+		min-width: 150px;
+		width: 70%;
+		max-width: 100%;
+		margin: 0px 0px 0px 10px;
+		padding: 0px 0px 0px 10px;
+	}
+	#sidebar {
+		width: 11%;
+	}
+	.post-info {
+		max-width: 50%;
+		float: right !important;
+	}
+}

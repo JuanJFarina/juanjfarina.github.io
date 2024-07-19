@@ -1,6 +1,6 @@
 AUTHOR = 'Juan José Farina'
 SITENAME = 'Juan José Farina'
-SITEURL = "https://juanjfarina.github.io"
+SITEURL = ""
 SITESUBTITLE = "Software Engineer"
 
 PATH = "content"
@@ -33,7 +33,7 @@ SOCIAL = (
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = False
+RELATIVE_URLS = True
 
 THEME = "notmyidea"
 
