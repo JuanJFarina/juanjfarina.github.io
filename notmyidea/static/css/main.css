@@ -13,6 +13,10 @@
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin);
 
 /***** Global *****/
+
+html {
+	scroll-behavior: smooth;
+}
 /* Body */
 body {
     background: linear-gradient(to right, #000, #222);
@@ -376,10 +380,25 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 *****************/
 #footer {
     padding-bottom: 2em; 
-    text-align: center; 
+    text-align: center !important;
     clear: both; 
     width: 80%;
     margin: 20px auto;
+}
+#footer h2 {
+	color: #408 !important;
+	font-size: 2em;
+	margin: 0 auto !important;
+}
+#footer h2 a:link, #footer h2 a:visited {
+	color: #408 !important;
+	font-weight: bold;
+	text-decoration: none;
+}
+#footer h2 a:hover, #footer h2 a:active {
+	background: none;
+	color: #fff !important;
+	text-shadow: none;
 }
 
 /***** Sections *****/
@@ -480,7 +499,24 @@ p code, li code {
 	border-right: #000 solid 6px;
 	border-bottom: #000 solid 8px;
 	border-radius: 2px;
-	padding: 5px;
+	padding: 10px 5px 5px 5px;
+}
+
+#post-share-links a:hover {
+	background: none !important;
+}
+
+.icon {
+	width: 2vw;
+	transition: all .1s;
+}
+
+#x {
+	filter: invert(90%);
+}
+
+.icon:hover {
+	transform: scale(1.2);
 }
 
 /* Global adjustments for smaller screens */

@@ -24,9 +24,9 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
+    ("Ezequiel Castaño", "https://elc.github.io/"),
+    ("Marvelous MLOPs", "https://marvelousmlops.substack.com/"),
+    ("MLOps Community", "https://mlops.community/"),
 )
 
 # Social widget

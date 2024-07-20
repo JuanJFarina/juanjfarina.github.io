@@ -66,18 +66,16 @@
 
         <aside id="sidebar">
                 <div class="widget">
-                        <h2>Categories</h2>
+                        <h2>Post Categories</h2>
                         <ul>
                         {% for cat, null in categories %}
                            <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
                         {% endfor %}
                         </ul>
                 </div>
-        {% if LINKS %}
-        {% endif %}
         {% if SOCIAL %}
                 <div class="widget social">
-                        <h2>Social</h2>
+                        <h2>Social Links</h2>
                         <ul>
                             {% if FEED_RSS %}
                             <li><a href="{{ SITEURL }}/{{ FEED_RSS }}" rel="alternate">rss feed</a></li>
@@ -89,9 +87,24 @@
                         </ul>
                 </div><!-- /.social -->
         {% endif %}
+        {% if LINKS %}
+        <div class="widget links">
+                <h2>Awesome Links</h2>
+                <ul>
+                    {% if FEED_RSS %}
+                    <li><a href="{{ SITEURL }}/{{ FEED_RSS }}" rel="alternate">rss feed</a></li>
+                    {% endif %}
+
+                {% for name, link in LINKS %}
+                    <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+                {% endfor %}
+                </ul>
+        </div><!-- /.links -->
+        {% endif %}
         </aside><!-- /#sidebar -->
 
         <footer id="footer" class="body">
+                <h2><a href="#banner">Back to top</a></h2>
         </footer><!-- /#footer -->
 
 {% include 'analytics.html' %}
