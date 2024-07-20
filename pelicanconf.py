@@ -6,7 +6,7 @@ SITESUBTITLE = "Software Engineer"
 PATH = "content"
 
 PLUGIN_PATHS = ["plugins"]
-PLUGINS=['pelican-ert', 'share_post']
+PLUGINS=['pelican-ert', 'share_post', 'sitemap']
 
 ERT_WPM = 170  # words per minute by default
 ERT_FORMAT = '{min_time}-{max_time}'
@@ -44,3 +44,23 @@ RELATIVE_URLS = True
 THEME = "notmyidea"
 
 PAGE_ORDER_BY = 'date'
+
+STATIC_PATHS = ['images', 'extra/robots.txt']
+
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': './robots.txt'},
+}
+
+SITEMAP = {
+    "format": "xml",
+    "priorities": {
+        "articles": 0.5,
+        "indexes": 0.5,
+        "pages": 0.5
+    },
+    "changefreqs": {
+        "articles": "monthly",
+        "indexes": "daily",
+        "pages": "monthly"
+    }
+}
