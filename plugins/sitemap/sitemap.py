@@ -28,7 +28,7 @@ XML_URL = """
 {translations}</url>
 """
 
-XML_TRANSLATION = """<xhtml:link rel="alternate" hreflang="{}" ref="{}/{}"/>
+XML_TRANSLATION = """<xhtml:link rel="alternate" hreflang="{}" href="{}/{}"/>
 """
 
 XML_FOOTER = """
@@ -42,7 +42,7 @@ def format_date(date):
         tz = date.strftime("%z")
         tz = tz[:-2] + ":" + tz[-2:]
     else:
-        tz = "-00:00"
+        tz = "Z"
     return date.strftime("%Y-%m-%dT%H:%M:%S") + tz
 
 
@@ -101,7 +101,7 @@ class SitemapGenerator:
         output_path = pelican.output_path
         log.debug("sitemap: Writing sitemap to %r", output_path)
         context = pelican.settings
-        siteurl = context["SITEURL"]
+        siteurl = context["SITEURL"].rstrip("/")
         config = context.get("SITEMAP", {})
         self._check_config(config)
         excluded = config.get("exclude", ())
@@ -140,8 +140,7 @@ class SitemapGenerator:
 
             for pageurl, obj in page_queue:
                 if not is_xml:
-                    fd.write(siteurl + "/" + pageurl + "\n")
-                    # That's it for txt. Short circuit the loop, gain an indent level.
+                    fd.write(f"{siteurl}/{pageurl}\n")
                     continue
 
                 lastmod = format_date(
@@ -162,7 +161,6 @@ class SitemapGenerator:
                     XML_TRANSLATION.format(
                         trans.lang,
                         siteurl,
-                        # save_as path is already output-relative
                         clean_url(pathname2url(trans.save_as)),
                     )
                     for trans in getattr(obj, "translations", ())
