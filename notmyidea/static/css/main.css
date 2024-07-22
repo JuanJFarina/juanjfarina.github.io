@@ -544,6 +544,9 @@ p code, li code {
         max-width: 40%;
         float: right !important;
     }
+	.hentry {
+		margin-bottom: 5vh;
+	}
     .icon {
         width: 5vw;
     }
