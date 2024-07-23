@@ -2,11 +2,11 @@ Title: Semantic Release
 Date: 2023-10-02
 Modified: 2024-07-20
 Category: Articles
-Tags: development, engineering, versioning, vcs, automation, python
+Tags: software engineering, versioning
 Slug: semantic-release
 Authors: Juan José Farina, Ezequiel Castaño
 Summary: This article is a destiled version of the presentation "Semantic Release" by Juan José Farina and Ezequiel Castaño. It provides an overview of the Semantic Release tool and its benefits for versioning and automation in software development.
-Keywords: semantic release, versioning, automation, software development, vcs, python
+Keywords: semantic, release, versioning, automation, software development, vcs, python
 
 ---
 
