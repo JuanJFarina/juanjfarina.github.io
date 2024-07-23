@@ -30,23 +30,25 @@ HTTP is an `application layer protocol` that most commonly make use of `TCP/IP`,
 
 Requests also have a method, which is the action that the client wants to perform on the server. The most common methods are:
 
-- **GET**: Retrieve an existing resource using a URI. This could be anything, and it's what is commonly done when browsing the web: retrieving HTML, CSS, etc. GET has no body.
+- **GET**: Retrieve an existing resource using a URI. This could be anything, and it's what is commonly done when browsing the web: retrieving HTML, CSS, etc. `GET` has no body.
 
-*(this method exists since the first public version of HTTP 0.9 of 1991)*
-- **POST**: Send data to a server. This was the method to create a resource or ask the server to perform an action. Basically, anything that wasn't a "retrieve operation" (a GET operation), used to be a POST operation.
+*(this method exists since the first public version of HTTP/0.9 of 1991)*
+
+- **POST**: Send data to a server. This was the method to create a resource or ask the server to perform an action. Basically, anything that wasn't a "retrieve operation" (a `GET` operation), used to be a `POST` operation.
 - **PUT**: Put a resource in a specific URI. This is usually used for updating an existing resource, though it can be used to create a new resource too.
 - **DELETE**: Delete an existing resource at a specific URI.
 
-*(these methods, among others, were introduced in HTTP 1.0 of 1996)*
+*(these methods, among others, were introduced in HTTP/1.0 of 1996)*
+
 - **PATCH**: This updates an existing resource partially.
 
-*(this method was introduced with HTTP 1.1 of 1997)*
+*(this method was introduced with HTTP/1.1 of 1997)*
 
 You can learn more about the changes of the HTTP protocol in [this page](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP).
 
-GET, PUT and DELETE are `idempotent` operations, which means that they can be performed multiple times without changing the result beyond the initial application of the operation.
+`GET, PUT and DELETE are idempotent operations`, which means that they can be performed multiple times without changing the result beyond the initial application of the operation.
 
-POST and PATCH are not naturally idempotent, meaning successive calls to the same endpoint with the same payload may result in multiple resources being created or consecutive modifications being made.
+`POST and PATCH are not naturally idempotent`, meaning successive calls to the same endpoint with the same payload may result in multiple resources being created or consecutive modifications being made.
 
 ## Are HTTP APIs or REST APIs the same as CRUD then ?
 
@@ -57,6 +59,20 @@ A typical misconception of HTTP methods and REST APIs is that they map to one of
 - **Update**: Update an existing resource. Somewhat similar, but not equal, to PUT and PATCH.
 - **Delete**: Delete an existing resource. Similar to DELETE.
 
+While some operations are similar to some HTTP methods, you should know the differences in order to better write APIs.
+
+## Types of HTTP APIs
+### SOAP
+Standing for `Simple Object Access Protocol`
+
+### RPC
+Standing for `Remote Procedure Call`
+
+### gRPC
+Google's modern implementation of RPC
+
+## So... What is a REST API ?
+REST means `Representational State Transfer` and is an architectural style for distributed hypermedia systems. It was originally created by Roy Thomas Fielding on his doctoral dissertation of 2000.
 
 
 <!-- <p align="center">
