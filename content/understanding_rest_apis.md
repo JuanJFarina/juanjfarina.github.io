@@ -346,7 +346,7 @@ So in order to have a truly `RESTful API`, it must be `Client-Server` structured
 
 <p align="center">
     <img src="images/rest.png" alt="REST" width="70%"><br>
-    <i>(image taken from Fielding's dissertation "Architectural Styles and the Design of Network-based Software Architectures of 2000")</i>
+    <i>(image taken from Fielding's dissertation "Architectural Styles and the Design of Network-based Software Architectures" of 2000)</i>
 </p>
 
 ## REST Interface
