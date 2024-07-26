@@ -23,7 +23,13 @@ But, when we are talking about REST APIs, we are not talking about any kind of A
 
 `Hypertext Transfer Protocol (HTTP)` is the foundation of any data exchange on the Web and a protocol used for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes.
 
-HTTP is an `application layer protocol` that most commonly make use of `TCP/IP`, a four layers model for network communication between devices. We won't delve into the latter because of the more complex technicalities of such a low-level communication protocol, but just do know that HTTP relies on other lower-level layers of communication. Let's keep talking about HTTP, a typical request or response consists vaguely of two things:
+HTTP is an `application layer protocol` that most commonly make use of `TCP/IP`, a four layers model for network communication between devices. Here is a short GIF on how the data flow works:
+
+<p align="center">
+  <img src="images/tcp_ip_model_flow.gif" alt="TCP/IP">
+</p>
+
+We won't delve into the more complex technicalities of such low-level communication protocols, but just do know that HTTP relies on these lower-level layers. Let's keep talking about HTTP. A typical request or response consists vaguely of two things:
 
 - **Headers**: additional information about the request or response.
 - **Body**: the actual data being transferred.
@@ -103,6 +109,12 @@ A basic distinction of RESTful APIs vs other web APIs is where they send the met
 
 The former uses primarily the `URI` and the HTTP methods to send information (thus why it is sometimes mistaken as CRUD), something called `resource-oriented`, while the latter uses an `envelope` and more commonly the POST method.
 
+Here you can see a comparison of how web services' endpoints could look like in a RESTful style vs a non-RESTful style:
+
+<p align="center">
+  <img src="images/endpoints.png" alt="endpoints">
+</p>
+
 Many older web services used envelope-based protocols, like:
 
 - **XML-RPC**
@@ -156,7 +168,9 @@ SOAP services also almost always expose a WSDL file (`Werb Service Description L
 
 - **REST-RPC Hybrids**
 
-Google's modern implementation of RPC
+These are APIs that had a mixed style of RESTful and traditional RPC. The term is not very used nowadays, though it could still be relevant since even though most of the REST style has been adopted as common practice today, most APIs don't exactly match Roy Fielding's original design.
+
+Before diving in today's practices, let's see some common examples for the 2000's:
 
 #### ASP.NET create dinner example
 ```csharp
@@ -320,8 +334,4 @@ There, he explains the five contraints (think of them as design rules) of a REST
 
 - One resource may be targeted by many URIs and one URI may send data of many resources, but a URI points to only one target, that's why it is a `Universal Resource Identifier`
 
-CONTINUAR EN PÁGINA 104 DEL LIBRO RESTFUL WEB SERVICES
-
-<!-- <p align="center">
-  <img src="image.png" alt="Example Image">
-</p> -->
+CONTINUAR EN PÁGINA 200 DEL LIBRO RESTFUL WEB SERVICES Y RECORDAR AGREGAR LA NOTA SOBRE EL ROUTING DE LAS URI
