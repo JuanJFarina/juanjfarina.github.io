@@ -2,10 +2,10 @@ Title: Understanding REST APIs
 Date: 2024-07-22
 Modified: 2024-07-22
 Category: Articles
-Tags: software engineering, api
+Tags: software engineering, backend, web development, rest api
 Slug: understanding-rest-apis
 Authors: Juan José Farina
-Summary: Are you a master of REST APIs? Check this article where I delve into the origins of REST APIs, their structure, and how they work.
+Summary: Are you a master of REST APIs? Check this article where I delve into their origins, structure, and how they work.
 
 ---
 
