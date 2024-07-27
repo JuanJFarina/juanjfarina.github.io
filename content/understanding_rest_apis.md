@@ -171,11 +171,11 @@ SOAPAction: urn:GoogleSearchAction
     <i>(example taken from the 2007's book "RESTful Web Services")</i>
 </p>
 
-SOAP services also almost always expose a WSDL file (`Werb Service Description Language`), which is an XML vocabulary used to describe SOAP-based web services so a client can know what methods it can call, what arguments those expect, which data types return, etc.
+SOAP services also almost always expose a WSDL file (`Web Service Description Language`), which is an XML vocabulary used to describe SOAP-based web services so a client can know what methods it can call, what arguments those expect, which data types return, etc.
 
 - **REST-RPC Hybrids**
 
-These are APIs that had a mixed style of RESTful and traditional RPC. The term is not very used nowadays, though it could still be relevant since even though most of the REST style has been adopted as common practice today, most APIs don't exactly match Roy Fielding's original design.
+These are APIs that had a mixed style of RESTful and traditional RPC. The term is not very used nowadays, though it could still be relevant since even though much of the REST style has been adopted as common practice today, most APIs don't exactly match Roy Fielding's original design.
 
 Before diving in today's practices, let's see some common examples for the 2000's:
 
@@ -339,7 +339,7 @@ There, he explains the five constraints (think of them as design rules) of a RES
 - **Stateless**: each request from the client to server must contain all of the information necessary to understand the request. `The server must not have any stored context`. Session state is kept entirely on the client. This constraint improves visibility, reliability, and scalability. A slight trade-off is that network performance may decrease due to repetitive data sent in series of requests.
 - **Cache**: to improve network efficiency, a REST API should have one or more cache layers or "connectors". `Data that is sent in response to a request should be labeled as cacheable or non-cacheable`, so the client (or other intermediary components) is able to reuse that response data for further equivalent requests. This, of course, improves efficiency, scalability and user-perceived performance.
 - **Uniform Interface**: according to Roy, this is a central feature of REST APIs. The interface of RESTful APIs consists of `identification of resources`, `manipulation of resources through representations`, `self-descriptive messages`, and `hypermedia as the engine of application state` *(more on these later)*.
-- **Layered System**: a layered system is organized hierarchically, `each layer providing services to the layer above it and using services of the layer below it`. In the case of network-based systems like REST API's, two possible extra layers are proxys and gateway components. Layers can be used to encapsulate legacy services ad to protect new services from legacy clients, simplifying components by moing infrequently used functionality to a shared intermediary.
+- **Layered System**: a layered system is organized hierarchically, `each layer providing services to the layer above it and using services of the layer below it`. In the case of network-based systems like REST API's, two possible extra layers are proxys and gateway components. Layers can be used to encapsulate legacy services and to protect new services from legacy clients, simplifying components by moving infrequently used functionality to a shared intermediary.
 - **Code-On-Demand**: this is actually an optional constraint, as defined by Roy Fielding. An API REST can be used to extend the client's funcionalities by downloading scripts.
 
 So in order to have a truly `RESTful API`, it must be `Client-Server` structured, `Stateless`, `Cacheable`, have a specific `Uniform Interface`, and a `Layered System`:
