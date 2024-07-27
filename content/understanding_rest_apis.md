@@ -2,7 +2,7 @@ Title: Understanding REST APIs
 Date: 2024-07-22
 Modified: 2024-07-22
 Category: Articles
-Tags: software engineering, backend, web development, rest api
+Tags: api, backend, programming, software development, web development
 Slug: understanding-rest-apis
 Authors: Juan José Farina
 Summary: Are you a master of REST APIs? Check this article where I delve into their origins, structure, and how they work.
@@ -399,7 +399,7 @@ HTTP/1.1 200 OK
     }]
 }
 ```
-We can see we can turn it on by doing this:
+We can see now that we can turn it on by doing this:
 ```
 PUT /toaster HTTP/1.1
 
