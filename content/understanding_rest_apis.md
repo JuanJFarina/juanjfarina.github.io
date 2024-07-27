@@ -13,7 +13,7 @@ Summary: Are you a master of REST APIs? Check this article where I delve into th
 
 First things first: API means `Application Programming Interface`. It's a set of rules and protocols for building and interacting with software applications. It's essentially an exposed communication protocol so external systems can make an application return either data or execute some functionality.
 
-That was very formal, let's break it down: suppose you have a data structure of an `array` and you don't know its contents. Something like: `[?, ?, ?, ?, ?...]`, where you don't even know how many elements are in the array, nor can community in any way.
+That was very formal, let's break it down: suppose you have a data structure of an `array` and you don't know its contents. Something like: `[?, ?, ?, ?, ?...]`, where you don't even know how many elements are in the array, nor can communicate in any way.
 
 An API would be a `means for you to communicate with the array`, for instance, retrieving the length of the array, retrieving an item at certain index, or sorting the array. And yes, all those methods and properties that you use in your every day programming language, are APIs of the data structures that you are using.
 
@@ -141,7 +141,7 @@ Connection: keep-alive
 </methodCall>
 ```
 <p align="center">
-    <i>(image taken from the 2007's book "RESTful Web Services")</i>
+    <i>(example taken from the 2007's book "RESTful Web Services")</i>
 </p>
 
 - **SOAP**
@@ -168,7 +168,7 @@ SOAPAction: urn:GoogleSearchAction
 </soap:Envelope>
 ```
 <p align="center">
-    <i>(image taken from the 2007's book "RESTful Web Services")</i>
+    <i>(example taken from the 2007's book "RESTful Web Services")</i>
 </p>
 
 SOAP services also almost always expose a WSDL file (`Werb Service Description Language`), which is an XML vocabulary used to describe SOAP-based web services so a client can know what methods it can call, what arguments those expect, which data types return, etc.
