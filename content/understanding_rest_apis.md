@@ -112,8 +112,8 @@ The former uses primarily the `URI` and the HTTP methods to send information (th
 Here you can see a comparison of how web services' endpoints could look like in a RESTful style vs a non-RESTful style:
 
 <p align="center">
-    <img src="images/endpoints.png" alt="endpoints" width="70%"><br>
-    <i>(image taken from the 2007's book "RESTful Web Services")</i>
+    <img src="images/endpoints.png" alt="endpoints" width="80%"><br>
+    <i>(image inspired in the example of 2007's book "RESTful Web Services")</i>
 </p>
 
 *Note that in early 2000's, web languages and frameworks were yet to have routing capabilities, so in order to call an `API endpoint` you had to have a file in the specific URI you used. This started to change in mid-2000's, when libraries and frameworks started making their first routing capabilities, which allowed to route HTTP requests to whichever file in the server you wanted.*
@@ -127,8 +127,8 @@ Standing for `XML Remote Procedure Call`, uses `XML` as an envelope for the data
 XML-RPC ignores most features of HTTP, since it may use only one URI ("`endpoint`") and support only one method on that URI (POST). The XML envelope specifies wich function to call.
 
 ```
-POST /rpc HTTP/1.1
-Host: www.upcdatabase.com
+POST /rpc-example HTTP/1.1
+Host: www.upcexampledatabase.com
 User-Agent: XMLRPC::Client (Ruby 1.8.4)
 Content-Type: text/xml; charset=utf-8
 Content-Length: 158
@@ -141,7 +141,7 @@ Connection: keep-alive
 </methodCall>
 ```
 <p align="center">
-    <i>(example taken from the 2007's book "RESTful Web Services")</i>
+    <i>(example inspired from the 2007's book "RESTful Web Services")</i>
 </p>
 
 - **SOAP**
@@ -151,7 +151,6 @@ Standing for `Simple Object Access Protocol`. This protocol, although different 
 SOAP is built on top of HTTP:
 
 ```
-<!-- A sample SOAP RPC call -->
 POST search/beta2 HTTP/1.1
 Host: api.google.com
 Content-Type: application/soap+xml
@@ -161,14 +160,14 @@ SOAPAction: urn:GoogleSearchAction
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
     <soap:Body>
         <gs:doGoogleSearch xmlns:gs="urn:GoogleSearch">
-            <q>REST</q>
+            <q>SOAP CALL EXAMPLE</q>
             ...
         </gs:doGoogleSearch>
     </soap:Body>
 </soap:Envelope>
 ```
 <p align="center">
-    <i>(example taken from the 2007's book "RESTful Web Services")</i>
+    <i>(example inspired from the 2007's book "RESTful Web Services")</i>
 </p>
 
 SOAP services also almost always expose a WSDL file (`Web Service Description Language`), which is an XML vocabulary used to describe SOAP-based web services so a client can know what methods it can call, what arguments those expect, which data types return, etc.
@@ -179,43 +178,38 @@ These are APIs that had a mixed style of RESTful and traditional RPC. The term i
 
 Before diving in today's practices, let's see some common examples for the 2000's:
 
-#### ASP.NET create dinner example
+#### ASP.NET create event example
 ```csharp
-//
-// Request a POST /Dinners/Create using an HTML form
+// Request a POST /Events/Create using an HTML form
 
 [AcceptVerbs(HttpVerbs.Post)]
-public ActionResult Create(Dinner dinner) {
+public ActionResult Create(Event event) {
 
     if (ModelState.IsValid) {
 
         try {
-            dinner.HostedBy = “SomeUser”;
+            event.HostedBy = "SomeUser";
 
-            dinnerRepository.Add(dinner);
-            dinnerRepository.Save();
+            eventRepository.Add(event);
+            eventRepository.Save();
 
-            return RedirectToAction(“Details”, new {id = dinner.DinnerID });
+            return RedirectToAction("Details", new { id = event.EventID });
         }
         catch {
-            ModelState.AddRuleViolations(dinner.GetRuleViolations());
+            ModelState.AddRuleViolations(event.GetRuleViolations());
         }
     }
 
-    return View(dinner);
+    return View(event);
 }
 ```
 <p align="center">
-    <i>(example taken from the 2009's book "Professoinal ASP.NET MVC 1.0")</i>
+    <i>(example inspired from the 2009's book "Professoinal ASP.NET MVC 1.0")</i>
 </p>
 
 #### PHP authentication example
 ```php
-<?
-    /*
-    ** Define a couple of functions for
-    ** starting and ending an HTML document
-    */
+<?php
     function startPage()
     {
         print("<HTML>\n");
@@ -230,10 +224,8 @@ public ActionResult Create(Dinner dinner) {
         print("</BODY>\n");
         print("</HTML>\n");
     }
-    /*
-    ** test for username/password
-    */
-    if(($PHP_AUTH_USER == "leon") AND ($PHP_AUTH_PW == "secret"))
+
+    if(($PHP_AUTH_USER == "user123") AND ($PHP_AUTH_PW == "password123"))
     {
         startPage();
 
@@ -243,20 +235,17 @@ public ActionResult Create(Dinner dinner) {
     }
     else
     {
-        //send headers to cause a browser to request
-        //username and password from user
-        header("WWW-Authenticate: Basic realm= \"Leon's Protected Area\"");
+        header("WWW-Authenticate: Basic realm= \"User's Protected Area\"");
         header("HTTP/1.0 401 Unauthorized");
 
-        //show failure text
         print("This page is protected by HTTP Authentication.<br>\n");
-        print("Use <B>leon</B> for the username, and <B>secret</B> ");
+        print("Use <B>user123</B> for the username, and <B>password123</B> ");
         print("for the password.<br>\n"); 
     }
 ?>
 ```
 <p align="center">
-    <i>(example taken from the 2000's book "Core PHP Programming")</i>
+    <i>(example inspired from the 2000's book "Core PHP Programming")</i>
 </p>
 
 #### PERL CGI file upload example
@@ -265,46 +254,38 @@ public ActionResult Create(Dinner dinner) {
 
 # Request a POST /upload.cgi using an HTML form
 use strict;
-use CGI ’param’;
+use CGI 'param';
 
-my $filename = param(’filename’);
-my $outfile = "outputfile";
+my $filename = param('upload_file');
+my $outfile = "output_file";
 
 print "Content-type: text/html\n\n";
 
-# There will probably be permission problems with this open
-# statement unless you’re running under cgiwrap, or your script
-# is setuid, or $outfile is world writable. But let’s not worry
-# about that for now.
+open (OUTFILE, ">$outfile") || die "Can't open output file: $!";
 
-open (OUTFILE, ">$outfile") || die "Can’t open output file: $!";
-
-# This bit is taken straight from the CGI.pm documentation --
-# you could also just use "while (<$filename>)" if you wanted
-
-my ($buffer, $bytesread);
-while ($bytesread=read($filename,$buffer,1024)) {
+my ($buffer, $bytes_read);
+while ($bytes_read = read($filename, $buffer, 1024)) {
     print OUTFILE $buffer;
 }
 
-close OUTFILE || die "Can’t close OUTFILE: $!";
+close OUTFILE || die "Can't close OUTFILE: $!";
 
 print "<p>Uploaded file and saved as $outfile</p>\n";
 
 print "</body></html>";
 ```
 <p align="center">
-    <i>(example taken from the 2000's book "CGI Programming in Perl")</i>
+    <i>(example inspired from the 2000's book "CGI Programming in Perl")</i>
 </p>
 
 #### JAVA servlet example
 ```java
-// Request a GET /servlet/Hello using an HTML form
+// Request a GET /servlet/Greeting using an HTML form
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
-public class Hello extends HttpServlet {
+public class Greeting extends HttpServlet {
 
     public void doGet(HttpServletRequest req, HttpServletResponse res)
     throws ServletException, IOException {
@@ -312,22 +293,22 @@ public class Hello extends HttpServlet {
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
 
-        String name = req.getParameter("name");
+        String name = req.getParameter("username");
         out.println("<HTML>");
-        out.println("<HEAD><TITLE>Hello, " + name + "</TITLE></HEAD>");
+        out.println("<HEAD><TITLE>Greeting, " + name + "</TITLE></HEAD>");
         out.println("<BODY>");
         out.println("Hello, " + name);
         out.println("</BODY></HTML>");
     }
 
     public String getServletInfo() {
-        return "A servlet that knows the name of the person to whom it's" +
+        return "A servlet that knows the name of the person to whom it's " +
         "saying hello";
     }
 }
 ```
 <p align="center">
-    <i>(example taken from the 1998's book "Java Servlet Programming")</i>
+    <i>(example inspired from the 1998's book "Java Servlet Programming")</i>
 </p>
 
 ## So... What is a REST API ?
@@ -346,7 +327,7 @@ So in order to have a truly `RESTful API`, it must be `Client-Server` structured
 
 <p align="center">
     <img src="images/rest.png" alt="REST" width="70%"><br>
-    <i>(image taken from Fielding's dissertation "Architectural Styles and the Design of Network-based Software Architectures" of 2000)</i>
+    <i>(image inspired from the one in Fielding's dissertation "Architectural Styles and the Design of Network-based Software Architectures" of 2000)</i>
 </p>
 
 ## REST Interface
@@ -439,7 +420,6 @@ Let's see a basic example without frameworks using `Python`:
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 
-# In-memory data store
 items = []
 
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
