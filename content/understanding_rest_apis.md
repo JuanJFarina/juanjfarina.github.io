@@ -6,6 +6,7 @@ Tags: api, backend, programming, software development, web development
 Slug: understanding-rest-apis
 Authors: Juan José Farina
 Summary: Are you a master of REST APIs? Check this article where I delve into their origins, structure, and how they work.
+Keywords: rest, api, backend, web, programming, software development, web development
 
 ---
 

@@ -6,6 +6,7 @@ Tags: it, jobs, career, linkedin
 Slug: job_in_it
 Authors: Juan José Farina
 Summary: This article is a guide to landing a job in IT. It covers the importance of a guide, the challenges of getting a job, and the steps to follow to increase your chances of success.
+Keywords: job, it, career, guide, linkedin
 
 ---
 
