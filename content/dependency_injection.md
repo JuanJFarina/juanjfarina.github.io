@@ -98,10 +98,10 @@ if __name__ == "__main__":
     sender.send("Juan", "Jose")
 ```
 
-It's possible to inject a dependency inside a constructor, by using a setter or a property, decorating the class with the service, or using frameworks. Dependency Injection offers several advantages:
+It's possible to inject a dependency inside a `constructor`, by using a `setter` or a `property`, `decorating` the class with the service, or using `frameworks`. Dependency Injection offers several advantages:
 
-- **Decoupling:** By injecting dependencies rather than instantiating objects or copying code, the classes become more modular and easier to maintain. This decoupling allows each class to focus on its core responsibilities without worrying about how its dependencies are created or managed.
+- **Decoupling:** By injecting dependencies rather than instantiating objects or copying code, the classes become more `modular` and `easier to maintain`. This decoupling allows each class to focus on its core responsibilities without worrying about how its dependencies are created or managed.
 
-- **Testability:** Classes that rely on Dependency Injection are easier to test because you can easily substitute real dependencies with mocks or stubs. This allows for more effective unit testing.
+- **Testability:** Classes that rely on Dependency Injection are `easier to test` because you can easily substitute real dependencies with mocks or stubs. This allows for more effective unit testing.
 
 - **Flexibility:** With Dependency Injection, you can change the behavior of your application by swapping out implementations of dependencies without altering the dependent class. This is especially useful in scenarios where you need to support different environments (e.g., development, testing, production).
