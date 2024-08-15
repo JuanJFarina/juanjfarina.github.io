@@ -1,6 +1,6 @@
 Title: Dependency Injection
-Date: 2024-08-09
-Modified: 2024-08-09
+Date: 2024-08-14
+Modified: 2024-08-14
 Category: Design Patterns
 Tags: dependency injection, design patterns, programming, python
 Slug: dependency-injection
