@@ -58,7 +58,7 @@ Cloud models define the deployment type of cloud resources. There are three main
   - Organizations pay only for what they use
   - Organizations don't have complete control over resources and security
 
-- **Private Cloud** - it's a cloud that is used by a single organization. It can be hosted on-premises or in a dedicated offsite data center.
+- **Private Cloud** - it's a cloud that is used by a single organization. It can be hosted on-premise or in a dedicated offsite data center.
   - Organizations have complete control over resources and security
   - Data is not collocated with other organizations' data
   - Hardware must be purchased for startup and maintenance
@@ -105,3 +105,7 @@ CONTINUE FROM HERE: https://learn.microsoft.com/en-us/training/modules/describe-
 - *Microsoft Azure Fundamentals Official Training Course* - [https://learn.microsoft.com/es-es/training/courses/az-900t00](https://learn.microsoft.com/es-es/training/courses/az-900t00)
 - *Supersonic Playground* - [https://www.supersonicplayground.com/resources/blogs/cloud-hosting-vs-traditional-hosting/](https://www.supersonicplayground.com/resources/blogs/cloud-hosting-vs-traditional-hosting/)
 - *Cloud Panel* - [https://www.cloudpanel.io/blog/cloud-hosting-vs-traditional-hosting/#what-is-traditional-hosting](https://www.cloudpanel.io/blog/cloud-hosting-vs-traditional-hosting/#what-is-traditional-hosting)
+
+# APUNTES DE TECLAB
+
+
