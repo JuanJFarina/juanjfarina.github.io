@@ -67,7 +67,7 @@
 
         <aside id="sidebar">
                 <div class="widget">
-                        <h2>Post Categories</h2>
+                        <h2>Blog Categories</h2>
                         <ul>
                         {% for cat, null in categories %}
                            <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
