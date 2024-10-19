@@ -40,7 +40,7 @@ But what happens when you want to keep learning, growing and be promoted ? Shoul
 
 Quoting Wikipedia:
 
-_The Peter principle states that a person who is competent at their job will earn a promotion to a position that requires different skills. If the promoted person lacks the skills required for the new role, they will be incompetent at the new level, and will not be promoted again.[2] If the person is competent in the new role, they will be promoted again and will continue to be promoted until reaching a level at which they are incompetent. Being incompetent, the individual will not qualify for promotion again, and so will remain stuck at this final placement or Peter's plateau._
+_The Peter principle states that a person who is competent at their job will earn a promotion to a position that requires different skills. If the promoted person lacks the skills required for the new role, they will be incompetent at the new level, and will not be promoted again. If the person is competent in the new role, they will be promoted again and will continue to be promoted until reaching a level at which they are incompetent. Being incompetent, the individual will not qualify for promotion again, and so will remain stuck at this final placement or Peter's plateau._
 
 _This outcome is inevitable, given enough time and enough positions in the hierarchy to which competent employees may be promoted. The Peter principle is therefore expressed as: "In a hierarchy, every employee tends to rise to his level of incompetence." This leads to Peter's corollary: "In time, every post tends to be occupied by an employee who is incompetent to carry out its duties."_
 
