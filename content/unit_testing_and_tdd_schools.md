@@ -23,7 +23,7 @@ directly from the pioneer's own books, which you'll find in the references secti
 ## Ugh... Testing...
 
 <p align="center">
-  <img src="images/meme_tests_wont_fail.png" alt="Tests Won't Fail If You Don't Write Tests" width="80%">
+  <img src="images/meme_tests_wont_fail.png" alt="Tests Won't Fail If You Don't Write Tests" width="50%">
 </p>
  
 I know... Many developers don't like testing. Testing, in Software Development, has 
@@ -32,7 +32,7 @@ The first "bug" was found on 1947, and was a real bug, a moth, that was trapped 
 computer inside Harvard University:
 
 <p align="center">
-  <img src="images/first_bug.png" alt="First Bug, 1947" width="50%">
+  <img src="images/first_bug.png" alt="First Bug, 1947" width="80%">
 </p>
 
 Of course, there is more value than just "finding bugs", more specifically two:
@@ -48,13 +48,13 @@ there are two main categories of tests:
 internal workings.
 
 <p align="center">
-  <img src="images/black_box_testing.png" alt="Black Box Testing" width="50%">
+  <img src="images/black_box_testing.png" alt="Black Box Testing" width="80%">
 </p>
 
 - **White-box Testing**: Examines the inside of the software, the inner workings.
 
 <p align="center">
-  <img src="images/white_box_testing.png" alt="White Box Testing" width="50%">
+  <img src="images/white_box_testing.png" alt="White Box Testing" width="80%">
 </p>
 
 Throughout this article, we'll focus on the **white-box testing**.
@@ -67,14 +67,14 @@ change being tested as it is added to the system. This allows for early detectio
 issues and reduces the risk of introducing new bugs.
 
 <p align="center">
-  <img src="images/incremental_testing.png" alt="Incremental Testing" width="50%">
+  <img src="images/incremental_testing.png" alt="Incremental Testing" width="80%">
 </p>
 
 - **Regression Testing**: Testing is performed after each change to ensure that the 
 changes have not introduced new bugs or broken existing functionality.
 
 <p align="center">
-  <img src="images/regression_testing.png" alt="Regression Testing" width="50%">
+  <img src="images/regression_testing.png" alt="Regression Testing" width="80%">
 </p>
 
 These and other testing strategies can now be easily automated and run, but in the early 
@@ -86,7 +86,7 @@ years of testing, this was not the case:
 - Results of the tests had to be manually recorded in text files or even paper
 
 <p align="center">
-  <img src="images/vintage_testing.png" alt="Vintage Testing" width="50%">
+  <img src="images/vintage_testing.png" alt="Vintage Testing" width="80%">
 </p>
 
 Okay, we have the *what* and the *when*, but
@@ -94,7 +94,7 @@ Okay, we have the *what* and the *when*, but
 ## How should we test ?
 
 <p align="center">
-  <img src="images/meme_write_code_to_check.png" alt="So You Are Telling Me... That I Have To Write Code To Check If The Code I Wrote Earlier Was Right" width="80%">
+  <img src="images/meme_write_code_to_check.png" alt="So You Are Telling Me... That I Have To Write Code To Check If The Code I Wrote Earlier Was Right" width="50%">
 </p>
 
 Let's go over some basics of white-box testing: first off, stages:
@@ -115,14 +115,13 @@ making users test the software to ensure it meets their requirements.
 
 The testing pyramid, introduced by Mike Cohn, suggests that most tests in a software 
 application should be unit tests, as they are the quickest and easiest to run. The 
-pyramid is structured as follows:
-
-**Unit Tests** form the pyramid's base, as they are highly specific and fast.
-**Integration Tests** sit in the middle, testing interactions between components.
-**End-to-End Tests** are at the top, being often slower and more complex to maintain.
+pyramid is structured as follows: Unit Tests form the pyramid's base, as they are highly 
+specific and fast. Integration Tests sit in the middle, testing interactions between 
+components. And finally, End-to-End Tests are at the top, being often slower and more 
+complex to maintain.
 
 <p align="center">
-  <img src="images/testing_pyramid.png" alt="Mike Cohn Testing Pyramid" width="50%">
+  <img src="images/testing_pyramid.png" alt="Mike Cohn Testing Pyramid" width="80%">
 </p>
 
 Unit and Module testing allow developers to confirm that each part works correctly on 
@@ -135,7 +134,7 @@ more costly to fix.
 ## Effective Testing Practices
 
 <p align="center">
-  <img src="images/meme_testing_is_a_big_deal.png" alt="Testing It's Kind Of A Big Deal" width="80%">
+  <img src="images/meme_testing_is_a_big_deal.png" alt="Testing It's Kind Of A Big Deal" width="50%">
 </p>
 
 Poorly designed tests can quickly become a burden, that's why unit tests should:
@@ -164,7 +163,7 @@ is usually accomplished by a *test fixture*.
 **Assert**: Check the results, verifying that the outcome matches expectations.
 
 <p align="center">
-  <img src="images/bill_wake_aaa_pattern.png" alt="Bill Wake AAA Pattern" width="50%">
+  <img src="images/bill_wake_aaa_pattern.png" alt="Bill Wake AAA Pattern" width="80%">
 </p>
 
 Though following this pattern you must be careful to create as fewer possible objects 
@@ -179,7 +178,7 @@ often reveal insights about the design and lead to more adaptable, decoupled sys
 ## Understanding TDD Origins and Concept
 
 <p align="center">
-  <img src="images/meme_tests_everywhere.png" alt="Tests Tests Everywhere" width="80%">
+  <img src="images/meme_tests_everywhere.png" alt="Tests Tests Everywhere" width="50%">
 </p>
 
 Kent Beck, born 1961, is the person behind the "rediscovery" of TDD. Kent is a software 
@@ -189,7 +188,7 @@ original singatories of the Agile Manifesto, and the pioneer of Test-Driven Deve
 (*what a legend !*).
 
 <p align="center">
-  <img src="images/kent_beck.png" alt="Kent Beck" width="50%">
+  <img src="images/kent_beck.png" alt="Kent Beck" width="80%">
 </p>
 
 He says it's a "rediscovery" because TDD seems to have been a common pattern of 
@@ -197,7 +196,7 @@ development back in the punched tape era; you grab the input tape, write an expe
 output tape, and then make a program that generates the same output.
 
 <p align="center">
-  <img src="images/punched_cards.png" alt="Punched Cards" width="50%">
+  <img src="images/punched_cards.png" alt="Punched Cards" width="80%">
 </p>
 
 As its earlier form, TDD is a software development methodology that consists of writing 
@@ -208,7 +207,7 @@ Beck introduces TDD as a tool to improve software quality and developer producti
 through an iterative cycle: Red-Green-Refactor.
 
 <p align="center">
-  <img src="images/red_green_refactor.png" alt="TDD Red Green Refactor" width="50%">
+  <img src="images/red_green_refactor.png" alt="TDD Red Green Refactor" width="80%">
 </p>
 
 The TDD process works in a sequence:
@@ -226,7 +225,7 @@ a design activity.
 ## Think-Design-Develop ?
 
 <p align="center">
-  <img src="images/think_design_develop.png" alt="Think-Design-Develop" width="80%">
+  <img src="images/think_design_develop.png" alt="Think-Design-Develop" width="50%">
 </p>
 
 TDD could very well mean that, as opposed to simply start developing with whatever you 
@@ -261,7 +260,7 @@ with more stress you test less, make more errors, then feel even more stressed a
 ## Why do we need TDD ?
 
 <p align="center">
-  <img src="images/meme_you_could_have_both.png" alt="What If I Told You You Could Have Both Speed And Safety" width="80%">
+  <img src="images/meme_you_could_have_both.png" alt="What If I Told You You Could Have Both Speed And Safety" width="50%">
 </p>
 
 Michael Feathers in his book "Working Effectively with Legacy Code" considers *legacy*
@@ -290,7 +289,7 @@ focused code changes, and early identification of potential design issues.
 ## Chicago vs. London Schools of TDD
 
 <p align="center">
-  <img src="images/chicago_vs_london.png" alt="Chicago Vs London" width="80%">
+  <img src="images/chicago_vs_london.png" alt="Chicago Vs London" width="50%">
 </p>
 
 The TDD practice has evolved significantly since its inception, giving rise to two 
@@ -365,7 +364,7 @@ made.
 ## Concusions
 
 <p align="center">
-  <img src="images/tdd_conclusions.png" alt="Conclusions" width="80%">
+  <img src="images/tdd_conclusions.png" alt="Conclusions" width="50%">
 </p>
 
 The most important thing in TDD is not its methodology, the code coverage nor the code 
