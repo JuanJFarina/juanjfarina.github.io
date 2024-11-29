@@ -1,6 +1,6 @@
 Title: Unit Testing and TDD Schools
 Date: 2024-11-28
-Modified: 2024-11-28
+Modified: 2024-11-29
 Category: Articles
 Tags: testing, unit testing, test driven development, tdd, software development, software engineering
 Slug: unit-testing-and-tdd-schools
@@ -21,11 +21,19 @@ doing basic TDD, and know where to go look for more information. Most informatio
 directly from the pioneer's own books, which you'll find in the references section.
 
 ## Ugh... Testing...
+
+<p align="center">
+  <img src="images/meme_tests_wont_fail.png" alt="Tests Won't Fail If You Don't Write Tests" width="80%">
+</p>
  
 I know... Many developers don't like testing. Testing, in Software Development, has 
 traditionally been associated with the idea of finding errors or "bugs" as we know them. 
 The first "bug" was found on 1947, and was a real bug, a moth, that was trapped in a 
-computer inside Harvard University.
+computer inside Harvard University:
+
+<p align="center">
+  <img src="images/first_bug.png" alt="First Bug, 1947" width="50%">
+</p>
 
 Of course, there is more value than just "finding bugs", more specifically two:
 
@@ -38,7 +46,16 @@ there are two main categories of tests:
 
 - **Black-box Testing**: Examines the outside of the software, without knowledge of the 
 internal workings.
+
+<p align="center">
+  <img src="images/black_box_testing.png" alt="Black Box Testing" width="50%">
+</p>
+
 - **White-box Testing**: Examines the inside of the software, the inner workings.
+
+<p align="center">
+  <img src="images/white_box_testing.png" alt="White Box Testing" width="50%">
+</p>
 
 Throughout this article, we'll focus on the **white-box testing**.
 
@@ -48,8 +65,17 @@ many testing strategies, but we'll only mention two:
 - **Incremental Testing**: Testing is performed incrementally, with each new feature or 
 change being tested as it is added to the system. This allows for early detection of 
 issues and reduces the risk of introducing new bugs.
+
+<p align="center">
+  <img src="images/incremental_testing.png" alt="Incremental Testing" width="50%">
+</p>
+
 - **Regression Testing**: Testing is performed after each change to ensure that the 
 changes have not introduced new bugs or broken existing functionality.
+
+<p align="center">
+  <img src="images/regression_testing.png" alt="Regression Testing" width="50%">
+</p>
 
 These and other testing strategies can now be easily automated and run, but in the early 
 years of testing, this was not the case:
@@ -59,9 +85,17 @@ years of testing, this was not the case:
 - Outputs had to be humanly checked
 - Results of the tests had to be manually recorded in text files or even paper
 
+<p align="center">
+  <img src="images/vintage_testing.png" alt="Vintage Testing" width="50%">
+</p>
+
 Okay, we have the *what* and the *when*, but
 
 ## How should we test ?
+
+<p align="center">
+  <img src="images/meme_write_code_to_check.png" alt="So You Are Telling Me... That I Have To Write Code To Check If The Code I Wrote Earlier Was Right" width="80%">
+</p>
 
 Let's go over some basics of white-box testing: first off, stages:
 
@@ -77,14 +111,7 @@ complete system prior to delivery.
 - **Acceptance Testing**: also called *alpha testing* or *beta testing*, it involves 
 making users test the software to ensure it meets their requirements.
 
-Unit and Module testing allow developers to confirm that each part works correctly on 
-its own, independent of external dependencies. These tests are critical because they 
-offer instant feedback on whether small parts of your codebase work as expected, helping 
-to identify issues early in the development process. This saves time and resources by 
-catching bugs before they move up to integration and E2E testing, where they are often 
-more costly to fix.
 
-### Effective Testing Practices
 
 The testing pyramid, introduced by Mike Cohn, suggests that most tests in a software 
 application should be unit tests, as they are the quickest and easiest to run. The 
@@ -94,10 +121,28 @@ pyramid is structured as follows:
 **Integration Tests** sit in the middle, testing interactions between components.
 **End-to-End Tests** are at the top, being often slower and more complex to maintain.
 
+<p align="center">
+  <img src="images/testing_pyramid.png" alt="Mike Cohn Testing Pyramid" width="50%">
+</p>
+
+Unit and Module testing allow developers to confirm that each part works correctly on 
+its own, independent of external dependencies. These tests are critical because they 
+offer instant feedback on whether small parts of your codebase work as expected, helping 
+to identify issues early in the development process. This saves time and resources by 
+catching bugs before they move up to integration and E2E testing, where they are often 
+more costly to fix.
+
+## Effective Testing Practices
+
+<p align="center">
+  <img src="images/meme_testing_is_a_big_deal.png" alt="Testing It's Kind Of A Big Deal" width="80%">
+</p>
+
 Poorly designed tests can quickly become a burden, that's why unit tests should:
 
 - Be simple, concise, focused and light-weight. They must run fast and help us localize 
 problems.
+- Be organized in a predictable way, either close to the code or in a similar structure.
 - Have descriptive names easily understandable.
 - Have only one responsibility per test case. One test result should be irrelevant to 
 others.
@@ -118,6 +163,10 @@ is usually accomplished by a *test fixture*.
 **Act**: Execute the operation or function under test.
 **Assert**: Check the results, verifying that the outcome matches expectations.
 
+<p align="center">
+  <img src="images/bill_wake_aaa_pattern.png" alt="Bill Wake AAA Pattern" width="50%">
+</p>
+
 Though following this pattern you must be careful to create as fewer possible objects 
 and re-use them as much as possible.
 
@@ -129,13 +178,27 @@ often reveal insights about the design and lead to more adaptable, decoupled sys
 
 ## Understanding TDD Origins and Concept
 
+<p align="center">
+  <img src="images/meme_tests_everywhere.png" alt="Tests Tests Everywhere" width="80%">
+</p>
+
 Kent Beck, born 1961, is the person behind the "rediscovery" of TDD. Kent is a software 
 engineer from Oregon with a Master in Computer Science, creator of the Extreme 
 Programming (XP) methodology, of the SUnit and JUnit testing framework, one of the 17 
 original singatories of the Agile Manifesto, and the pioneer of Test-Driven Development 
-(what a legend !). He says it's a "rediscovery" because TDD seems to have been a common 
-pattern of development back in the punched tape era; you grab the input tape, write an 
-expected output tape, and then make a program that generates the same output.
+(*what a legend !*).
+
+<p align="center">
+  <img src="images/kent_beck.png" alt="Kent Beck" width="50%">
+</p>
+
+He says it's a "rediscovery" because TDD seems to have been a common pattern of 
+development back in the punched tape era; you grab the input tape, write an expected 
+output tape, and then make a program that generates the same output.
+
+<p align="center">
+  <img src="images/punched_cards.png" alt="Punched Cards" width="50%">
+</p>
 
 As its earlier form, TDD is a software development methodology that consists of writing 
 tests for code before actually implementing the code itself. This approach was 
@@ -143,6 +206,10 @@ popularized as a means to create robust, adaptable software with a focus on simp
 and continuous feedback. In his seminal book, "Test-Driven Development: By Example," 
 Beck introduces TDD as a tool to improve software quality and developer productivity 
 through an iterative cycle: Red-Green-Refactor.
+
+<p align="center">
+  <img src="images/red_green_refactor.png" alt="TDD Red Green Refactor" width="50%">
+</p>
 
 The TDD process works in a sequence:
 
@@ -158,6 +225,10 @@ a design activity.
 
 ## Think-Design-Develop ?
 
+<p align="center">
+  <img src="images/think_design_develop.png" alt="Think-Design-Develop" width="80%">
+</p>
+
 TDD could very well mean that, as opposed to simply start developing with whatever you 
 come up first to try to solve the problem at hand. Writing tests first makes you 
 inevitable have to make yourself some questions:
@@ -168,7 +239,7 @@ inevitable have to make yourself some questions:
 - What should the names be called ?
 - How are you going to check for the right answer ?
 - What other tests does this test suggest ? *Kent encourages having a list of future* 
-*tests to be written*
+*tests to be written once the current test is passing*
 
 This process is done iteratively with very short changes, though Kent Beck says it can 
 be done bigger and faster too, just that being able to take bigger or smaller steps is a 
@@ -189,8 +260,12 @@ with more stress you test less, make more errors, then feel even more stressed a
 
 ## Why do we need TDD ?
 
+<p align="center">
+  <img src="images/meme_you_could_have_both.png" alt="What If I Told You You Could Have Both Speed And Safety" width="80%">
+</p>
+
 Michael Feathers in his book "Working Effectively with Legacy Code" considers *legacy*
-*code* simply "code without tests", and says that code without tests is bad code. No 
+*code* simply "code without tests", and says that **code without tests is bad code**. No 
 matter how pretty or object-oriented or well-encapsulated it is.
 
 He says *"Without tests, we really don't know if our code is getting better or worse"*.
@@ -213,6 +288,10 @@ that define the desired behavior upfront, TDD encourages incremental development
 focused code changes, and early identification of potential design issues.
 
 ## Chicago vs. London Schools of TDD
+
+<p align="center">
+  <img src="images/chicago_vs_london.png" alt="Chicago Vs London" width="80%">
+</p>
 
 The TDD practice has evolved significantly since its inception, giving rise to two 
 well-known approaches often referred to as the *Chicago School* and the *London School*. 
@@ -241,11 +320,17 @@ A typical test in this school also follows the AAA pattern described earlier, an
 limited mocking style results in a much better technique for systems that are not 
 designed in pure object-oriented paradigm.
 
+A Chciago School test looks pretty much like the 3A pattern:
+
+- Initialize the needed state and objects.
+- Execute the actions that are unde test.
+- Check that the results match the expectated ones.
+
 ### London School (Mockist TDD)
 
 The London School emerged from the innovations of the London Extreme Tuesday Club and 
-was championed by Steve Freeman and Nat Pryce, authors of Growing Object-Oriented 
-Software, Guided by Tests. The term "London School" was introduced by Michael Feathers 
+was championed by Steve Freeman and Nat Pryce, authors of *Growing Object-Oriented 
+Software, Guided by Tests*. The term "London School" was introduced by Michael Feathers 
 in 2009 as a counterpart to the Detroit/Chicago School.
 
 This school takes an *interaction-based testing* approach, focusing on how objects 
@@ -266,7 +351,7 @@ affecting the code under test, like patching certain code.
 
 London School is associated to a "mocking only" style of TDD, but that's not true 
 either; the pioneers of this school were more focused on pure OO design and thus focused 
-more on the communication between objects than on the objects themselves.
+more on the collaboration and communication between objects.
 
 A London School test could look like this:
 
@@ -277,51 +362,16 @@ A London School test could look like this:
 - Assert that any resulting values are valid and that all the expected calls have been 
 made.
 
-### Chicago School Example
-
-```python
-class BankAccount:
-    def __init__(self, balance=0):
-        self.balance = balance
-
-    def deposit(self, amount):
-        self.balance += amount
-
-def test_deposit():
-    account = BankAccount()
-    account.deposit(100)
-    assert account.balance == 100
-```
-
-### London School Example
-
-```python
-from unittest.mock import Mock
-
-class TransferService:
-    def __init__(self, bank_account_service):
-        self.bank_account_service = bank_account_service
-
-    def transfer(self, amount, from_account, to_account):
-        self.bank_account_service.withdraw(from_account, amount)
-        self.bank_account_service.deposit(to_account, amount)
-
-def test_transfer():
-    mock_account_service = Mock()
-    transfer_service = TransferService(mock_account_service)
-
-    transfer_service.transfer(100, 'Account1', 'Account2')
-    
-    mock_account_service.withdraw.assert_called_once_with('Account1', 100)
-    mock_account_service.deposit.assert_called_once_with('Account2', 100)
-```
-
 ## Concusions
+
+<p align="center">
+  <img src="images/tdd_conclusions.png" alt="Conclusions" width="80%">
+</p>
 
 The most important thing in TDD is not its methodology, the code coverage nor the code 
 correctness (absence of bugs), but the  emphasis on testing and refactoring.
 
-*"If you look closely into the tests, the tests will look back at you"*
+**"If you look closely into the tests, the tests will look back at you"**
 
 Unit-tests are not only for finding bugs or validating specifications; they give us 
 insights about the design of the system, its elements, and how they interact with each 
@@ -333,14 +383,13 @@ you'll do as many lines of test code as model code, but you would be able to mak
 changes confidently, thanks to the ability to rapidly make regression testings (we could 
 call these *confidence-giving tests*).
 
-Over which school is better, I think it's a similar discussion to Functional Programming 
-versus Object Oriented Programming, in the sense that Chicago TDD makes perfect sense in 
-a pure and perfectly designed system with FP, and London or Mockist TDD makes perfect 
-sense in a pure and perfectly designed system with OOP, but the reality is that most 
-systems are a mix of both approaches, and so should TDD style be.
+Over which school is better, I think it's a matter of system design so for example, 
+Chicago TDD makes more sense in a mixed or functional paradigm system, and London or 
+Mockist TDD is ideal in a pure and perfectly designed system with OOP.
 
-Both schools, though, share the same foundational goal of TDD: shortening the feedback 
-loop to improve code quality and design.
+Both schools, though, share the same foundational goal of TDD: think about the design of 
+the code you are about to write by creating first the tests, and then running them every 
+short change to shorten the feedback loop and improve code quality and design.
 
 If you want to go carefully with your development and improve your code quality output, 
 you should definitely try TDD as presented by Kent Beck.
