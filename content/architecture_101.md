@@ -14,7 +14,7 @@ Keywords: software, development, engineering, architecture, design, patterns
 
 <p align="center">
   <img
-    src="../content/images/architecture_what_is_it.png"
+    src="images/architecture_what_is_it.png"
     alt="What is this ?"
     width="50%">
 </p>
@@ -71,7 +71,7 @@ Strategy pattern for the shipping, etc.
 
 <p align="center">
   <img
-    src="../content/images/architecture_01.png"
+    src="images/architecture_01.png"
     alt="Architecture vs Design"
     width="50%">
 </p>
@@ -144,7 +144,7 @@ Sommerville likes to say there are two main ones:
 
 <p align="center">
   <img
-    src="../content/images/architecture_small.png"
+    src="images/architecture_small.png"
     alt="Architecture in the small - Single building"
     width="50%">
 </p>
@@ -156,7 +156,7 @@ Sommerville likes to say there are two main ones:
 
 <p align="center">
   <img
-    src="../content/images/architecture_large.png"
+    src="images/architecture_large.png"
     alt="Architecture in the large - Many buildings"
     width="50%">
 </p>
@@ -206,7 +206,7 @@ Roy Fielding has an amazing definition about the elements of an architecture:
 
 <p align="center">
   <img
-    src="../content/images/architecture_definition.png"
+    src="images/architecture_definition.png"
     alt="Roy Fielding's definition of architecture"
     width="75%">
 </p>
@@ -254,7 +254,7 @@ web page (View).
 
 <p align="center">
   <img
-    src="../content/images/architecture_02.png"
+    src="images/architecture_02.png"
     alt="MVC Pattern"
     width="50%">
 </p>
@@ -306,7 +306,7 @@ same. The four layers are responsible for:
 
 <p align="center">
   <img
-    src="../content/images/architecture_03.png"
+    src="images/architecture_03.png"
     alt="Layered Architecture"
     width="50%">
 </p>
@@ -334,7 +334,7 @@ systems. This way, we end up with a 3-layers architecture as follows:
 
 <p align="center">
   <img
-    src="../content/images/architecture_hexagonal.png"
+    src="images/architecture_hexagonal.png"
     alt="Layered Architecture"
     width="50%">
 </p>
@@ -363,7 +363,7 @@ This is the most basic _network-based architecture_. It consists of:
 
 <p align="center">
   <img
-    src="../content/images/architecture_client_server.png"
+    src="images/architecture_client_server.png"
     alt="Client-Server Architecture"
     width="50%">
 </p>
