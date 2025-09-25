@@ -330,11 +330,23 @@ development services from you. It's more common in big companies and public
 organizations.
 - **Statement Of Work (SOW)**: a more refined proposal that includes all the
 details of the work to be done including scope, deliverables, schedule, 
-pricing, etc.
+pricing, etc. In smaller scopes, this may be your main and only document, 
+including then details regarding the contractual relationship that would 
+othewise go in the MSA.
 
-_You may also sign an NDA (Non-Disclosure Agreement) for protecting sensitive_ 
-_information that will be shared, and/or an SLA (Service Level Agreement) if_ 
+Some of the legal aspects that should be included are:
+
+- Confidentiality/Non-Disclosure Agreement (NDA)
+- Intellectual Property (IP) Ownership
+- Warranties and Disclaimers
+- Limitation of Liability
+- Termination Clause
+
+_You may also sign an SLA (Service Level Agreement) if_ 
 _you are required to provide ongoing support._
+
+Another important aspects of these documents is to define a concrete 
+Acceptance Criteria, Process, and Handover, at the end of the project.
 
 If the project is internal to a company, a _Project Charter_ may be done as 
 well or in place of the previous mentioned documents.
@@ -363,10 +375,11 @@ recommended:
 
 - Schedule regular _Stats Update Meetings_ in order to keep track of 
 development
-- Keep track of project's % of completion and baseline deviation
-- Schedule meetings to plan ahead the work left to be done
+- Keep track of project's % of completion and baseline deviation (either by 
+delays in delivery or by client change requests)
+- Schedule meetings to plan ahead the work for future increments
 - Schedule meetings with stakeholders and manage their expectations
-- Keep track of meeting's summaries and business decisions that are taken
+- Document meeting's summaries and business decisions that are taken
 - Schedule meetings to reflect on past work and improve
 
 Depending on the type of agreement/billing of the project, client's change 
@@ -375,6 +388,15 @@ _Control Board_ for approval or not (with respective _Change Order_ issued and
 annexed to the SOW to update the price and timeline).
 
 ### Monitoring & Controlling
+
+Keep track of project's progress and stakeholders informed with the 
+following metrics:
+
+- % complete vs baseline
+- Accomplished milestones
+- Key risks and issues
+- Changes requested and their status
+- Baseline deviation
 
 ### Closing
 
