@@ -368,6 +368,15 @@ Depending on the process made, you may write an _SRS (Software Requirements_
 _Specification)_ document, or enough _Backlog Work Items_ for the first 
 increment.
 
+The development team may consist of:
+
+- Waterfall: Project Manager, Business Analyst, Developers, Testers, UX/UI or others
+- Scrum: Product Owner, Scrum Master, Developers
+- XP: Customer, Coach, Tracker, Developers, Testers
+- Lean: Product Owner, Team/Technical Lead, Developers, Testers
+- SAFe: Release Train Engineer, System Architect, Product Manager, Solution Manager, Solution Architect, Solution Train Engineer
+
+
 ### Executing
 
 Regardless of the model you choose, some considerations are generally 
