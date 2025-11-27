@@ -24,6 +24,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
+    ("Martin Fowler", "https://martinfowler.com/"),
     ("Ezequiel Castaño", "https://elc.github.io/"),
     ("Marvelous MLOPs", "https://marvelousmlops.substack.com/"),
     ("MLOps Community", "https://mlops.community/"),
