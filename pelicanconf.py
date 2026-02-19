@@ -25,16 +25,14 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (
     ("Martin Fowler", "https://martinfowler.com/"),
+    ("Robert C. Martin (Uncle Bob)", "https://cleancoder.com/"),
     ("Ezequiel Castaño", "https://elc.github.io/"),
-    ("Marvelous MLOPs", "https://marvelousmlops.substack.com/"),
-    ("MLOps Community", "https://mlops.community/"),
 )
 
 # Social widget
 SOCIAL = (
     ("LinkedIn", "https://www.linkedin.com/in/juanjosefarina"),
     ("GitHub", "https://github.com/JuanJFarina"),
-    ("Youtube", "https://www.youtube.com/@juanjosefarina"),
 )
 
 DEFAULT_PAGINATION = 10

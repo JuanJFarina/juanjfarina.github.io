@@ -1,6 +1,6 @@
 Title: Architecture 101
 Date: 2025-08-09
-Modified: 2025-08-09
+Modified: 2026-02-18
 Category: Articles
 Tags: software development, software engineering, software architecture, design patterns
 Slug: architecture-101
@@ -102,32 +102,48 @@ any of these:
   applications, databases, etc. For some reason, people sometimes confuse
   layers with tiers, but hopefully you've now easily understood the difference.
 
-- **Services (layer)**: this is another ambiguous concept; some people treat
-  services as mere facades of the business logic, having the responsibility of
-  orchestrating the logic and providing a public API. Other people treat
-  services as the business logic itself, essentially merging two layers into
-  one.
+- **Services (layer/objects)**: this is another ambiguous concept; some
+  people treat services as mere facades of the business logic, having the
+  responsibility of orchestrating the logic and providing a public API. Other
+  people treat services as the business logic itself, essentially merging two
+  layers into one.
 
-- **Controllers**: same as the orchestrator meaning of _services_. The _MVC
+- **Controllers**: similar to _services_. The _MVC
   Architecture_ will call them controllers, while the _Layered Architecture_
   will call them services.
 
-- **Entities**: while this may mean different things for different authors,
-  entities should mean the modeled data structures that your system
-  persist/store, as in _Entity-Relationship Diagrams_ for databases.
+- **Entities**: these are abstractions of a "thing" or subject so to speak. But
+  they may also be a representation of it. Well, this term may mean different
+  things for different authors, but in essence, they are data structures that
+  are tied to either business domain or to persistence storages, as in
+  _Entity-Relationship Diagrams_ for databases.
+  - **Domain Entities**: these are structural units of data that are of value
+    to either the business or software. They're an abstraction that allows you
+    to solve a problem without being coupled to any external source or
+    representation.
 
-- **Models**: One of the most ambiguous terms. Models may refer to **many**
+  - **Persistence Entities**: also called _Records_ or _Data Models_, these
+    data structures are solely for storage purposes, and they don't necessarily
+    map 1:1 to a domain entity (if they even map to). That is, they aren't
+    necessarily a persistence representation of a domain entity.
+
+- **Models**: one of the most ambiguous terms. Models may refer to **many**
   things, like entities, data structures, objects, or even machine learning
-  models if you work in that field. I would encourage people to only call
-  "models" to data structures and/or objects that belong to the domain layer.
+  models if you work in that field. In general, _Model_ is synonimous to
+  _Entity_.
 
-\*_By the way, data structures should have no behaviour, and objects should_ 
-_have limited or no state (and encapsulated), you can learn more about this_ 
-_from Uncle Bob (https://blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html)._
+\*_By the way, here is a very interesting article on data structures versus
+\_objects from Uncle Bob, which is very relevant and interesting to read_
+(https://blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html).\_
 
-- **Schemas**: these are specifications for validating data; similar to models
-  and entities, but these should only serve the purpose of defining a specific
-  "filtering structure" for-so-say, not to have real value on itself.
+- **Schemas**: this is an outline or model of something. In code level, these
+  are usually specifications for validating data; similar to models and
+  entities, but these should only serve the purpose of defining a specific
+  "filtering structure" so to speak, not to have real value on itself.
+
+- **DTOs**: *Data Transfer Objects*, these serve the same purpose as *Schemas*, 
+  it will depend on your language, framework, and ecosystem, how you will call 
+  them.
 
 This should be a good basis for your understanding of software architecture
 terminology. We haven't covered specific terms of the Domain-Driven Design
@@ -135,12 +151,17 @@ style, which we'll touch upon near the end of the article.
 
 ## Architecture Models & Practices
 
-There are multiple levels at which to look at the architecture of a system. Ian
-Sommerville likes to say there are two main ones:
+A software architecture is an abstraction of the run-time elements of a
+software system during some phase of its operation. A system may be composed of
+many levels of abstraction and many phases of operation, each with its own
+software architecture. That's why there are multiple levels at which to look at 
+the architecture of a system. Ian Sommerville likes to say there are two main 
+ones:
 
 1. **Architecture in the small**: concerned with the architecture of individual
-   programs. At this level, we are concerned with the way that an individual
-   program is decomposed into components.
+   programs that can be deployed as a single unit. At this level, we are 
+   concerned with the way that an individual program is decomposed into layers 
+   and modules (or "components").
 
 <p align="center">
   <img
@@ -151,8 +172,9 @@ Sommerville likes to say there are two main ones:
 
 2. **Architecture in the large**: concerned with the architecture of complex
    enterprise systems that include other systems, programs, and program
-   components. These enterprise systems may be distributed over different
-   computers, which may be owned and managed by different companies.
+   components (in essence, "tiers"). These enterprise systems may be 
+   distributed over different computers, which may be owned and managed by 
+   different companies, and of course, independently and separately deployed.
 
 <p align="center">
   <img
@@ -161,9 +183,9 @@ Sommerville likes to say there are two main ones:
     width="50%">
 </p>
 
-Another way to understand it is by saying that a "small architecture" is a 
-grouping of layers that make up a single output (albeit through an API, a UI, 
-etc.), while a "big architecture" is a grouping of tiers, composed of many 
+Another way to understand it is by saying that a "small architecture" is a
+grouping of layers that make up a single output (albeit through an API, a UI,
+etc.), while a "big architecture" is a grouping of tiers, composed of many
 groups of layers with their distinct outputs.
 
 When taking design decisions about a "small architecture", you must take into
@@ -266,7 +288,17 @@ The flow of this pattern is:
 - If applicable, the **Model** handles data operations
 - The **Controller** sends an updated **View** back to the _User_
 
-This is suitable for small applications that handle mostly CRUD operations.
+This is suitable for small applications that handle mostly CRUD operations. A 
+few variants include:
+
+- **Hierarchical MVC**: very similar, but leveraging reusability of controllers 
+  in order to avoid duplicating logic.
+- **Presentation-Abstraction-Control**: similar to HMVC.
+- **Model-View-Adapter**: same as the newest definition of MVC (the one I 
+  presented earlier) where *Model* and *View* don't interact directly. In 
+  earlier definitions of MVC, these did communicate.
+- **Model-View-Presenter**: similar to MVC and MVA.
+- **Model-View-Viewmodel**: similar to all the previous.
 
 ### Layered Architecture
 
@@ -322,14 +354,14 @@ Also called _Clean Architecture_, _Onion Architecture_ or _Ports and Adapter_
 _Architecture_; using different terminology in most cases too, but the core
 idea is the same in all those architectures.
 
-This architecture is based on the _Dependency Inversion Principle_, which 
-states that high-level modules should not depend on low-level modules. This 
-means that our domain or business logic layer should not need to call (depend) 
-on the infrastructure layer (which is something that happens in the Layered 
+This architecture is based on the _Dependency Inversion Principle_, which
+states that high-level modules should not depend on low-level modules. This
+means that our domain or business logic layer should not need to call (depend)
+on the infrastructure layer (which is something that happens in the Layered
 Architecture).
 
-Instead, the domain layer will use abstractions or _ports_, which may be filled 
-with different implementations or _adapters_ for communicating to external 
+Instead, the domain layer will use abstractions or _ports_, which may be filled
+with different implementations or _adapters_ for communicating to external
 systems. This way, we end up with a 3-layers architecture as follows:
 
 <p align="center">
@@ -339,9 +371,9 @@ systems. This way, we end up with a 3-layers architecture as follows:
     width="50%">
 </p>
 
-This is a commonly recommended architecture for complex applications, though 
-due to its complex pattern it may not be the best option for small to medium 
-sized apps. This requires good skills in software design, DIP and dependency 
+This is a commonly recommended architecture for complex applications, though
+due to its complex pattern it may not be the best option for small to medium
+sized apps. This requires good skills in software design, DIP and dependency
 injection.
 
 ### Others
@@ -368,20 +400,20 @@ This is the most basic _network-based architecture_. It consists of:
     width="50%">
 </p>
 
-In other words, a client makes requests that trigger reactions from servers. 
-Those reactions may be very different processes, and the returning data (if 
+In other words, a client makes requests that trigger reactions from servers.
+Those reactions may be very different processes, and the returning data (if
 any) may be of very different natures.
 
 ### N-Tier Architecture (also called Multi-tier)
 
-This is the tier-version of the Layered Architecture. The idea is the same: 
-having multiple tiers (physical resources) being deployed and maintained 
+This is the tier-version of the Layered Architecture. The idea is the same:
+having multiple tiers (physical resources) being deployed and maintained
 separately, each tier only communicating with the inmediate tiers.
 
 There is also a variant where a tier may call any of the downstream tiers.
 
-A typical 3-tier application may consist of a frontend (client app), a backend 
-(server), and a database. Of course, this architecture may have many more 
+A typical 3-tier application may consist of a frontend (client app), a backend
+(server), and a database. Of course, this architecture may have many more
 tiers, for instance having multiple databases, or other kind of components.
 
 ### Pipe and Filter Architecture
@@ -391,8 +423,8 @@ completely independent of other filters, they must not share state or
 interfaces; and another (usually called "Uniform Pipe and Filter") where the
 filters have normalized interfaces for communication.
 
-We could say this is a "specific N-Tier Architecture", since this pattern 
-consists of multiple components, but the core idea here is that there is a 
+We could say this is a "specific N-Tier Architecture", since this pattern
+consists of multiple components, but the core idea here is that there is a
 clear sequential process that is being executed.
 
 ### Repository Architecture
@@ -419,59 +451,66 @@ greatly used in Data, ML and GenAI applications.
 
 ### Service Oriented Architecture
 
-This is similar to the N-Tier Architecture, in the sense that we will be 
-deploying numerous physical resources, but here we will be splitting the 
-system's logic in multiple _services_, that is, smaller cohesive and 
+This is similar to the N-Tier Architecture, in the sense that we will be
+deploying numerous physical resources, but here we will be splitting the
+system's logic in multiple _services_, that is, smaller cohesive and
 independent applications that achieve small isolated goals.
 
-This architecture improves maintainability and scalability, allowing different 
-services to scale up on-demand, to be maintained by different teams, and also 
+This architecture improves maintainability and scalability, allowing different
+services to scale up on-demand, to be maintained by different teams, and also
 to implement more caching and fault-tolerance mechanisms.
 
-A common pattern to use with SOA is the use of an _Enterprise Service Bus_, 
-which is a component that allows the publishing of messages (usually to a 
+A common pattern to use with SOA is the use of an _Enterprise Service Bus_,
+which is a component that allows the publishing of messages (usually to a
 _topic_ or _queue_) that are sent to all the services that are subscribed.
 
 ### Microservices
 
-This is one step further in the SOA direction; each service now must be 
-completely isolated and independent, having separate deployments and even data 
-storages (contrary to SOA which has shared databases). Each microservice must 
+This is one step further in the SOA direction; each service now must be
+completely isolated and independent, having separate deployments and even data
+storages (contrary to SOA which has shared databases). Each microservice must
 have only one very small task to accomplish and be proficient in.
 
 ### Event-Driven Architecture
 
-In essence, this is any distributed architecture (like SOA or Microservices) 
-that communicates through events. At first look, this looks very similar to 
-ESB messages, but they are not the same: an event is a message, but a message 
+In essence, this is any distributed architecture (like SOA or Microservices)
+that communicates through events. At first look, this looks very similar to
+ESB messages, but they are not the same: an event is a message, but a message
 is not necessarily an event. Messages may be:
 
 - **Events**: describing a change that has already happened.
 - **Command**: describing an operation that still has to be carried out.
 
-Events are past actions, and thus must be written in past tense: 
+Events are past actions, and thus must be written in past tense:
 DeliveryScheduled, OrderPlaced, etc.
 
-This must not be confused with _Event-Sourcing_, which is the technique of 
-storing all events as changes to _domain objects_, in order to be able to 
+This must not be confused with _Event-Sourcing_, which is the technique of
+storing all events as changes to _domain objects_, in order to be able to
 replicate any state of the system, not only the current.
 
-################################################################################
+## Domain Driven Design
 
-A good rule of thumb for figuring out what goes in the domain model and what goes in
-other parts of the system, is understanding how important the functionality is to the
-solution, and how likely it is to be changing.
+DDD, as it name implies, is an architecture design philosophy that puts the 
+business domain in the center of the design. It's not uncommon to hear older 
+engineers say "first, design your data models and choose your database", which 
+is a database-centric approach, but this shifted when complexity in business 
+logic rose.
 
-Subdomain components like persistence mechanisms tend to not change much, but business
-logic (core domain) tends to change more frequently because of feature development,
-refactor, bug fixes, etc.
+Much of the concepts of DDD are very abstract because they try to represent a 
+real business concept rather than a software concept. Domain, for example, is 
+the main concern of the business, the solution that it offers, the value it 
+delivers. If your business is a car concesionary, that's your domain, and you 
+may have logic regarding types of cars, possible features, prices, discounts, 
+and a lot of other business rules and invariants. That's what the business 
+sell, that's the application's domain.
 
-A software architecture is an abstraction of the run-time elements of a
-software system during some phase of its operation. A system may be composed of
-many levels of abstraction and many phases of operation, each with its own
-software architecture.
+A good rule of thumb for figuring out what goes in the "*Domain Layer*" and 
+what goes in other parts of the system, is understanding how important the 
+functionality is to the solution, and how likely it is to be changing.
 
-################################################################################
+Subdomain components like persistence mechanisms tend to not change much, but 
+business logic (core domain) tends to change more frequently because of feature 
+development, refactor, bug fixes, etc.
 
 ## References
 
