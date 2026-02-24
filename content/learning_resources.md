@@ -33,7 +33,7 @@ and MLOps !
 
 4: [Python Logging](https://docs.python.org/3/library/logging.html)
 
-5: [Python AsyncIO](https://docs.python.org/3/library/asyncio.html)
+5: [Python AsyncIO](https://docs.python.org/3/library/asyncio.html) | [Short Version](https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html#) (18 - 27 mins to read)
 
 6: [Python Profilers](https://docs.python.org/3/library/profile.html)
 
