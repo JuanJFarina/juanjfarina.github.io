@@ -19,7 +19,7 @@ and MLOps !
 ### Today's lucky article is:
 <p> 
   <script>
-    document.write(Math.floor(Math.random() * 40) + 1);
+    document.write(Math.floor(Math.random() * 41) + 1);
   </script>
 </p>Time to go study it !
 
@@ -89,36 +89,38 @@ Database
 
 26: [Psycopg (DB Driver)](https://www.psycopg.org/docs/index.html#)
 
-27: [SQLAlchemy (DB Driver abstraction)](https://docs.sqlalchemy.org/en/20/)
+27: [AsyncPG (DB Driver)](https://magicstack.github.io/asyncpg/current/usage.html)
 
-28: [SQLModel](https://sqlmodel.tiangolo.com/learn/)
+28: [SQLAlchemy (DB Driver abstraction)](https://docs.sqlalchemy.org/en/20/)
 
-29: [Alembic](https://alembic.sqlalchemy.org/en/latest/tutorial.html)
+29: [SQLModel](https://sqlmodel.tiangolo.com/learn/)
+
+30: [Alembic](https://alembic.sqlalchemy.org/en/latest/tutorial.html)
 
 Logging
 
-30: [Loguru](https://loguru.readthedocs.io/en/stable/resources.html)
+31: [Loguru](https://loguru.readthedocs.io/en/stable/resources.html)
 
 Data analysis
 
-31: [Numpy](https://numpy.org/devdocs/user/index.html)
+32: [Numpy](https://numpy.org/devdocs/user/index.html)
 
-32: [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
+33: [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
 
-33: [Polars](https://docs.pola.rs)
+34: [Polars](https://docs.pola.rs)
 
 ## Standards & Protocols
 
-34: [ASGI](https://asgi.readthedocs.io/en/latest/index.html)
+35: [ASGI](https://asgi.readthedocs.io/en/latest/index.html)
 
-35: [OpenAPI](https://learn.openapis.org/specification/)
+36: [OpenAPI](https://learn.openapis.org/specification/)
 
-36: [OAuth 2.0](https://oauth.net/2/)
+37: [OAuth 2.0](https://oauth.net/2/)
 
-37: [OpenID Connect (OIDC)](https://openid.net/specs/openid-connect-core-1_0.html)
+38: [OpenID Connect (OIDC)](https://openid.net/specs/openid-connect-core-1_0.html)
 
-38: [OpenTelemetry (OTel)](https://opentelemetry.io/docs/)
+39: [OpenTelemetry (OTel)](https://opentelemetry.io/docs/)
 
-39: [Secure Sockets Layer (SSL)](https://datatracker.ietf.org/doc/html/rfc6101)
+40: [Secure Sockets Layer (SSL)](https://datatracker.ietf.org/doc/html/rfc6101)
 
-40: [Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc8446)
+41: [Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc8446)
