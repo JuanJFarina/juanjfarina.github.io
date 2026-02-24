@@ -1,6 +1,6 @@
 Title: Learning Resources
 Date: 2026-02-18
-Modified: 2026-02-22
+Modified: 2026-02-23
 Category: Articles
 Tags: python, backend, mlops, data science, data analysis, data engineering
 Slug: learning-resources
