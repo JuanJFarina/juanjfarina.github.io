@@ -134,4 +134,4 @@ Data analysis
 
 - Databases: [Transaction](https://en.wikipedia.org/wiki/Database_transaction), [Cursor](<https://en.wikipedia.org/wiki/Cursor_(databases)>), [Normalization](https://en.wikipedia.org/wiki/Database_normalization)
 
-- [Behavior-Driven Design](https://en.wikipedia.org/wiki/Behavior-driven_development), [Doman-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design), [Test-Driven Development](https://en.wikipedia.org/wiki/Test-driven_development)
+- [Behavior-Driven Design](https://en.wikipedia.org/wiki/Behavior-driven_development), [Design-by-Contract](https://en.wikipedia.org/wiki/Design_by_contract), [Doman-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design), [Test-Driven Development](https://en.wikipedia.org/wiki/Test-driven_development)
