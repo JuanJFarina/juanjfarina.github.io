@@ -1,6 +1,6 @@
 Title: Learning Resources
 Date: 2026-02-18
-Modified: 2026-02-23
+Modified: 2026-02-26
 Category: Articles
 Tags: python, backend, mlops, data science, data analysis, data engineering
 Slug: learning-resources
@@ -10,13 +10,14 @@ Keywords: software, development, engineering, python, backend
 
 ---
 
-Welcome to my collection of official resources to learn all you need to know 
-about Python software engineering as well as specific roles like data analysis 
+Welcome to my collection of official resources to learn all you need to know
+about Python software engineering as well as specific roles like data analysis
 and MLOps !
 
-*Note: this will be updated over time*
+_Note: this will be updated over time_
 
 ### Today's lucky article is:
+
 <p> 
   <script>
     document.write(Math.floor(Math.random() * 41) + 1);
@@ -124,3 +125,11 @@ Data analysis
 40: [Secure Sockets Layer (SSL)](https://datatracker.ietf.org/doc/html/rfc6101)
 
 41: [Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc8446)
+
+### Glossary of Terms & Principles
+
+- Principles: [SOLID](https://en.wikipedia.org/wiki/SOLID), [KISS](https://en.wikipedia.org/wiki/KISS_principle), [SoC](https://en.wikipedia.org/wiki/Separation_of_concerns), [IoC](https://en.wikipedia.org/wiki/Inversion_of_control), [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), [LoD](https://en.wikipedia.org/wiki/Law_of_Demeter), [ACID](https://en.wikipedia.org/wiki/ACID)
+
+- Paradigms: [Structured](https://en.wikipedia.org/wiki/Structured_programming), [Procedural](https://en.wikipedia.org/wiki/Procedural_programming), [Functional](https://en.wikipedia.org/wiki/Functional_programming), [Object Oriented](https://en.wikipedia.org/wiki/Object-oriented_programming)
+
+- Databases: [Transaction](https://en.wikipedia.org/wiki/Database_transaction), [Cursor](<https://en.wikipedia.org/wiki/Cursor_(databases)>), [Normalization](https://en.wikipedia.org/wiki/Database_normalization)
