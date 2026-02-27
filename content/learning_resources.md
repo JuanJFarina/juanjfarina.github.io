@@ -133,3 +133,5 @@ Data analysis
 - Paradigms: [Structured](https://en.wikipedia.org/wiki/Structured_programming), [Procedural](https://en.wikipedia.org/wiki/Procedural_programming), [Functional](https://en.wikipedia.org/wiki/Functional_programming), [Object Oriented](https://en.wikipedia.org/wiki/Object-oriented_programming)
 
 - Databases: [Transaction](https://en.wikipedia.org/wiki/Database_transaction), [Cursor](<https://en.wikipedia.org/wiki/Cursor_(databases)>), [Normalization](https://en.wikipedia.org/wiki/Database_normalization)
+
+- [Behavior-Driven Design](https://en.wikipedia.org/wiki/Behavior-driven_development), [Doman-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design), [Test-Driven Development](https://en.wikipedia.org/wiki/Test-driven_development)
