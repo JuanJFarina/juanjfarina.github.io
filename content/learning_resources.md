@@ -58,83 +58,63 @@ _Note: this will be updated over time_
 
 ## Libraries
 
+Package Managers
+
+15: [Pipenv](https://pipenv.pypa.io/en/latest/)
+16: [UV](https://docs.astral.sh/uv/getting-started/installation/)
+
 Backend
 
-15: [Uvicorn (Server)](https://uvicorn.dev)
-
-16: [Starlette (ASGI App)](https://starlette.dev)
-
-17: [FastAPI (Starlette abstraction)](https://fastapi.tiangolo.com/learn/)
-
-18: [Graphene (GraphQL)](https://docs.graphene-python.org/en/latest/)
-
-19: [Strawberry (GraphQL)](https://strawberry.rocks/docs)
-
-20: [HTTPX (Client)](https://www.python-httpx.org)
-
-21: [AIOHTTP (Client)](https://docs.aiohttp.org/en/stable/)
+17: [Uvicorn (Server)](https://uvicorn.dev)
+18: [Starlette (ASGI App)](https://starlette.dev)
+19: [FastAPI (Starlette abstraction)](https://fastapi.tiangolo.com/learn/)
+20: [Graphene (GraphQL)](https://docs.graphene-python.org/en/latest/)
+21: [Strawberry (GraphQL)](https://strawberry.rocks/docs)
+22: [HTTPX (Client)](https://www.python-httpx.org)
+23: [AIOHTTP (Client)](https://docs.aiohttp.org/en/stable/)
 
 Testing
 
-22: [Pytest](https://docs.pytest.org/en/stable/index.html)
-
-23: [Hypothesis (Property-based testing)](https://hypothesis.readthedocs.io/en/latest/tutorial/index.html)
+24: [Pytest](https://docs.pytest.org/en/stable/index.html)
+25: [Hypothesis (Property-based testing)](https://hypothesis.readthedocs.io/en/latest/tutorial/index.html)
 
 Data validation and serialization
 
-24: [Pydantic](https://docs.pydantic.dev/latest/concepts/models/)
+26: [Pydantic](https://docs.pydantic.dev/latest/concepts/models/)
 
 Database
 
-25: [SQLite (DB Driver)](https://docs.python.org/3/library/sqlite3.html)
-
-26: [Psycopg (DB Driver)](https://www.psycopg.org/docs/index.html#)
-
-27: [AsyncPG (DB Driver)](https://magicstack.github.io/asyncpg/current/usage.html)
-
-28: [SQLAlchemy (DB Driver abstraction)](https://docs.sqlalchemy.org/en/20/)
-
-29: [SQLModel](https://sqlmodel.tiangolo.com/learn/)
-
-30: [Alembic](https://alembic.sqlalchemy.org/en/latest/tutorial.html)
+27: [SQLite (DB Driver)](https://docs.python.org/3/library/sqlite3.html)
+28: [Psycopg (DB Driver)](https://www.psycopg.org/docs/index.html#)
+29: [AsyncPG (DB Driver)](https://magicstack.github.io/asyncpg/current/usage.html)
+30: [SQLAlchemy (DB Driver abstraction)](https://docs.sqlalchemy.org/en/20/)
+31: [SQLModel](https://sqlmodel.tiangolo.com/learn/)
+32: [Alembic](https://alembic.sqlalchemy.org/en/latest/tutorial.html)
 
 Logging
 
-31: [Loguru](https://loguru.readthedocs.io/en/stable/resources.html)
+33: [Loguru](https://loguru.readthedocs.io/en/stable/resources.html)
 
 Data analysis
 
-32: [Numpy](https://numpy.org/devdocs/user/index.html)
-
-33: [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
-
-34: [Polars](https://docs.pola.rs)
+34: [Numpy](https://numpy.org/devdocs/user/index.html)
+35: [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
+36: [Polars](https://docs.pola.rs)
 
 ## Standards & Protocols
 
-35: [ASGI](https://asgi.readthedocs.io/en/latest/index.html)
-
-36: [OpenAPI](https://learn.openapis.org/specification/)
-
-37: [OAuth 2.0](https://oauth.net/2/)
-
-38: [OpenID Connect (OIDC)](https://openid.net/specs/openid-connect-core-1_0.html)
-
-39: [OpenTelemetry (OTel)](https://opentelemetry.io/docs/)
-
-40: [Secure Sockets Layer (SSL)](https://datatracker.ietf.org/doc/html/rfc6101)
-
-41: [Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc8446)
-
-42: [REST](https://en.wikipedia.org/wiki/REST#Architectural_constraints)
-
-43: [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455)
-
-44: [gRPC](https://grpc.io)
-
-45: [Server-Sent-Event](https://html.spec.whatwg.org/multipage/server-sent-events.html)
-
-46: [GraphQL](https://graphql.org/learn/introduction/)
+37: [ASGI](https://asgi.readthedocs.io/en/latest/index.html)
+38: [OpenAPI](https://learn.openapis.org/specification/)
+39: [OAuth 2.0](https://oauth.net/2/)
+40: [OpenID Connect (OIDC)](https://openid.net/specs/openid-connect-core-1_0.html)
+41: [OpenTelemetry (OTel)](https://opentelemetry.io/docs/)
+42: [Secure Sockets Layer (SSL)](https://datatracker.ietf.org/doc/html/rfc6101)
+43: [Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc8446)
+44: [REST](https://en.wikipedia.org/wiki/REST#Architectural_constraints)
+45: [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455)
+46: [gRPC](https://grpc.io)
+47: [Server-Sent-Event](https://html.spec.whatwg.org/multipage/server-sent-events.html)
+48: [GraphQL](https://graphql.org/learn/introduction/)
 
 ### Glossary of Terms & Principles
 
