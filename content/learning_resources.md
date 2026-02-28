@@ -20,7 +20,7 @@ _Note: this will be updated over time_
 
 <p> 
   <script>
-    document.write(Math.floor(Math.random() * 41) + 1);
+    document.write(Math.floor(Math.random() * 46) + 1);
   </script>
 </p>Time to go study it !
 
@@ -126,6 +126,16 @@ Data analysis
 
 41: [Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc8446)
 
+42: [REST](https://en.wikipedia.org/wiki/REST#Architectural_constraints)
+
+43: [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455)
+
+44: [gRPC](https://grpc.io)
+
+45: [Server-Sent-Event](https://html.spec.whatwg.org/multipage/server-sent-events.html)
+
+46: [GraphQL](https://graphql.org/learn/introduction/)
+
 ### Glossary of Terms & Principles
 
 - Principles: [SOLID](https://en.wikipedia.org/wiki/SOLID), [KISS](https://en.wikipedia.org/wiki/KISS_principle), [SoC](https://en.wikipedia.org/wiki/Separation_of_concerns), [IoC](https://en.wikipedia.org/wiki/Inversion_of_control), [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), [LoD](https://en.wikipedia.org/wiki/Law_of_Demeter), [ACID](https://en.wikipedia.org/wiki/ACID)
@@ -135,3 +145,5 @@ Data analysis
 - Databases: [Transaction](https://en.wikipedia.org/wiki/Database_transaction), [Cursor](<https://en.wikipedia.org/wiki/Cursor_(databases)>), [Normalization](https://en.wikipedia.org/wiki/Database_normalization)
 
 - [Behavior-Driven Design](https://en.wikipedia.org/wiki/Behavior-driven_development), [Design-by-Contract](https://en.wikipedia.org/wiki/Design_by_contract), [Doman-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design), [Test-Driven Development](https://en.wikipedia.org/wiki/Test-driven_development)
+
+- Theorems: [Little's Law](https://en.wikipedia.org/wiki/Little%27s_law)
