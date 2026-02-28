@@ -20,7 +20,7 @@ _Note: this will be updated over time_
 
 <p> 
   <script>
-    document.write(Math.floor(Math.random() * 53) + 1);
+    document.write(Math.floor(Math.random() * 55) + 1);
   </script>
 </p>Time to go study it !
 
@@ -76,7 +76,6 @@ _Note: this will be updated over time_
 
 Distribution
 
-
 17: [Build (Build Frontend)](https://build.pypa.io/en/stable/index.html)
 
 18: [Setuptools (Build Backend)](https://setuptools.pypa.io/en/latest/userguide/quickstart.html)
@@ -86,7 +85,6 @@ Distribution
 20: [UV (Package Manager)](https://docs.astral.sh/uv/getting-started/installation/)
 
 Backend
-
 
 21: [Uvicorn (Server)](https://uvicorn.dev)
 
@@ -104,69 +102,68 @@ Backend
 
 Testing
 
-
 28: [Pytest (Framework)](https://docs.pytest.org/en/stable/index.html)
 
 29: [Polyfactory (Mock Generator)](https://polyfactory.litestar.dev/latest/getting-started.html)
 
 30: [Hypothesis (Property-based testing)](https://hypothesis.readthedocs.io/en/latest/tutorial/index.html)
 
+31: [VCR (HTTP Recording)](https://vcrpy.readthedocs.io/en/latest/)
+
+32: [Pytest-recording (Pytest VCR plugin)](https://github.com/kiwicom/pytest-recording)
+
 Data validation and serialization
 
-
-31: [Pydantic](https://docs.pydantic.dev/latest/concepts/models/)
+33: [Pydantic](https://docs.pydantic.dev/latest/concepts/models/)
 
 Database
 
+34: [SQLite (DB Driver)](https://docs.python.org/3/library/sqlite3.html)
 
-32: [SQLite (DB Driver)](https://docs.python.org/3/library/sqlite3.html)
+35: [Psycopg (DB Driver)](https://www.psycopg.org/docs/index.html#)
 
-33: [Psycopg (DB Driver)](https://www.psycopg.org/docs/index.html#)
+36: [AsyncPG (DB Driver)](https://magicstack.github.io/asyncpg/current/usage.html)
 
-34: [AsyncPG (DB Driver)](https://magicstack.github.io/asyncpg/current/usage.html)
+37: [SQLAlchemy (DB Driver abstraction)](https://docs.sqlalchemy.org/en/20/)
 
-35: [SQLAlchemy (DB Driver abstraction)](https://docs.sqlalchemy.org/en/20/)
+38: [SQLModel](https://sqlmodel.tiangolo.com/learn/)
 
-36: [SQLModel](https://sqlmodel.tiangolo.com/learn/)
-
-37: [Alembic](https://alembic.sqlalchemy.org/en/latest/tutorial.html)
+39: [Alembic](https://alembic.sqlalchemy.org/en/latest/tutorial.html)
 
 Logging
 
-
-38: [Loguru](https://loguru.readthedocs.io/en/stable/resources.html)
+40: [Loguru](https://loguru.readthedocs.io/en/stable/resources.html)
 
 Data analysis
 
+41: [Numpy](https://numpy.org/devdocs/user/index.html)
 
-39: [Numpy](https://numpy.org/devdocs/user/index.html)
+42: [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
 
-40: [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
-
-41: [Polars](https://docs.pola.rs)
+43: [Polars](https://docs.pola.rs)
 
 ## Standards & Protocols
 
-42: [ASGI](https://asgi.readthedocs.io/en/latest/index.html)
+44: [ASGI](https://asgi.readthedocs.io/en/latest/index.html)
 
-43: [OpenAPI](https://learn.openapis.org/specification/)
+45: [OpenAPI](https://learn.openapis.org/specification/)
 
-44: [OAuth 2.0](https://oauth.net/2/)
+46: [OAuth 2.0](https://oauth.net/2/)
 
-45: [OpenID Connect (OIDC)](https://openid.net/specs/openid-connect-core-1_0.html)
+47: [OpenID Connect (OIDC)](https://openid.net/specs/openid-connect-core-1_0.html)
 
-46: [OpenTelemetry (OTel)](https://opentelemetry.io/docs/)
+48: [OpenTelemetry (OTel)](https://opentelemetry.io/docs/)
 
-47: [Secure Sockets Layer (SSL)](https://datatracker.ietf.org/doc/html/rfc6101)
+49: [Secure Sockets Layer (SSL)](https://datatracker.ietf.org/doc/html/rfc6101)
 
-48: [Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc8446)
+50: [Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc8446)
 
-49: [REST](https://en.wikipedia.org/wiki/REST#Architectural_constraints)
+51: [REST](https://en.wikipedia.org/wiki/REST#Architectural_constraints)
 
-50: [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455)
+52: [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455)
 
-51: [gRPC](https://grpc.io)
+53: [gRPC](https://grpc.io)
 
-52: [Server-Sent-Event](https://html.spec.whatwg.org/multipage/server-sent-events.html)
+54: [Server-Sent-Event](https://html.spec.whatwg.org/multipage/server-sent-events.html)
 
-53: [GraphQL](https://graphql.org/learn/introduction/)
+55: [GraphQL](https://graphql.org/learn/introduction/)
