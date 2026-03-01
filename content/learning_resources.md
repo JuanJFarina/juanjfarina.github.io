@@ -20,7 +20,7 @@ _Note: this will be updated over time_
 
 <p> 
   <script>
-    document.write(Math.floor(Math.random() * 55) + 1);
+    document.write(Math.floor(Math.random() * 57) + 1);
   </script>
 </p>Time to go study it !
 
@@ -100,70 +100,76 @@ Backend
 
 27: [AIOHTTP (Client)](https://docs.aiohttp.org/en/stable/)
 
+Dependency Injection (IoC)
+
+28: [Inject](https://pypi.org/project/inject/)
+
+29: [Dependency Injector](https://pypi.org/project/dependency-injector/)
+
 Testing
 
-28: [Pytest (Framework)](https://docs.pytest.org/en/stable/index.html)
+30: [Pytest (Framework)](https://docs.pytest.org/en/stable/index.html)
 
-29: [Polyfactory (Mock Generator)](https://polyfactory.litestar.dev/latest/getting-started.html)
+31: [Polyfactory (Mock Generator)](https://polyfactory.litestar.dev/latest/getting-started.html)
 
-30: [Hypothesis (Property-based testing)](https://hypothesis.readthedocs.io/en/latest/tutorial/index.html)
+32: [Hypothesis (Property-based testing)](https://hypothesis.readthedocs.io/en/latest/tutorial/index.html)
 
-31: [VCR (HTTP Recording)](https://vcrpy.readthedocs.io/en/latest/)
+33: [VCR (HTTP Recording)](https://vcrpy.readthedocs.io/en/latest/)
 
-32: [Pytest-recording (Pytest VCR plugin)](https://github.com/kiwicom/pytest-recording)
+34: [Pytest-recording (Pytest VCR plugin)](https://github.com/kiwicom/pytest-recording)
 
 Data validation and serialization
 
-33: [Pydantic](https://docs.pydantic.dev/latest/concepts/models/)
+35: [Pydantic](https://docs.pydantic.dev/latest/concepts/models/)
 
 Database
 
-34: [SQLite (DB Driver)](https://docs.python.org/3/library/sqlite3.html)
+36: [SQLite (DB Driver)](https://docs.python.org/3/library/sqlite3.html)
 
-35: [Psycopg (DB Driver)](https://www.psycopg.org/docs/index.html#)
+37: [Psycopg (DB Driver)](https://www.psycopg.org/docs/index.html#)
 
-36: [AsyncPG (DB Driver)](https://magicstack.github.io/asyncpg/current/usage.html)
+38: [AsyncPG (DB Driver)](https://magicstack.github.io/asyncpg/current/usage.html)
 
-37: [SQLAlchemy (DB Driver abstraction)](https://docs.sqlalchemy.org/en/20/)
+39: [SQLAlchemy (DB Driver abstraction)](https://docs.sqlalchemy.org/en/20/)
 
-38: [SQLModel](https://sqlmodel.tiangolo.com/learn/)
+40: [SQLModel](https://sqlmodel.tiangolo.com/learn/)
 
-39: [Alembic](https://alembic.sqlalchemy.org/en/latest/tutorial.html)
+41: [Alembic](https://alembic.sqlalchemy.org/en/latest/tutorial.html)
 
 Logging
 
-40: [Loguru](https://loguru.readthedocs.io/en/stable/resources.html)
+42: [Loguru](https://loguru.readthedocs.io/en/stable/resources.html)
 
 Data analysis
 
-41: [Numpy](https://numpy.org/devdocs/user/index.html)
+43: [Numpy](https://numpy.org/devdocs/user/index.html)
 
-42: [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
+44: [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
 
-43: [Polars](https://docs.pola.rs)
+45: [Polars](https://docs.pola.rs)
 
 ## Standards & Protocols
 
-44: [ASGI](https://asgi.readthedocs.io/en/latest/index.html)
+46: [ASGI](https://asgi.readthedocs.io/en/latest/index.html)
 
-45: [OpenAPI](https://learn.openapis.org/specification/)
+47: [OpenAPI](https://learn.openapis.org/specification/)
 
-46: [OAuth 2.0](https://oauth.net/2/)
+48: [OAuth 2.0](https://oauth.net/2/)
 
-47: [OpenID Connect (OIDC)](https://openid.net/specs/openid-connect-core-1_0.html)
+49: [OpenID Connect (OIDC)](https://openid.net/specs/openid-connect-core-1_0.html)
 
-48: [OpenTelemetry (OTel)](https://opentelemetry.io/docs/)
+50: [OpenTelemetry (OTel)](https://opentelemetry.io/docs/)
 
-49: [Secure Sockets Layer (SSL)](https://datatracker.ietf.org/doc/html/rfc6101)
+51: [Secure Sockets Layer (SSL)](https://datatracker.ietf.org/doc/html/rfc6101)
 
-50: [Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc8446)
+52: [Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc8446)
 
-51: [REST](https://en.wikipedia.org/wiki/REST#Architectural_constraints)
+53: [REST](https://en.wikipedia.org/wiki/REST#Architectural_constraints)
 
-52: [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455)
+54: [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455)
 
-53: [gRPC](https://grpc.io)
+55: [gRPC](https://grpc.io)
 
-54: [Server-Sent-Event](https://html.spec.whatwg.org/multipage/server-sent-events.html)
+56: [Server-Sent-Event](https://html.spec.whatwg.org/multipage/server-sent-events.html)
 
-55: [GraphQL](https://graphql.org/learn/introduction/)
+57: [GraphQL](https://graphql.org/learn/introduction/)
