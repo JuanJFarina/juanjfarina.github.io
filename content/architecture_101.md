@@ -84,6 +84,10 @@ sometimes the same pattern is described in different ways and different
 patterns from different authors may have differing terminology for things that
 are essentially very similar.
 
+Well, Robert C. Martin (Uncle Bob) would argue that _architecture_ and _design_ 
+are essentially the same, and that it makes no sense to think of them as 
+different. Both are essentially about decisions regarding an application.
+
 Let's address some terms upfront; don't worry if you haven't yet heard about
 any of these:
 
@@ -330,7 +334,7 @@ same. The four layers are responsible for:
 - **Service**: here lives the code that will handle the interactions, that will
   orchestrate the operations required for specific use cases. It's like the
   glue code to stick together all the core functionalities under a specific
-  label.
+  feature.
 - **Business Logic**: this will be your core logic, where you solve a specific
   business problem. Typically for solving this, you will need some data.
 - **Data**: your data toolkit with which to gather what you need and apply any
@@ -512,11 +516,56 @@ Subdomain components like persistence mechanisms tend to not change much, but
 business logic (core domain) tends to change more frequently because of feature 
 development, refactor, bug fixes, etc.
 
+## The importance of good Architecture
+
+Uncle Bob in his _Clean Architecture_ has an amazing first chapter on this 
+topic. I'm sure no one could explain this better than him, so I highly 
+encourage you to go read at least this sole chapter for understanding **why** 
+you should struggle to always take care of your system's architecture as much 
+as possible.
+
+But, to share some of his wisdom here, he says that systems essentially provide 
+two distinguishable values to shareholders: **behavior** and **structure**.
+
+By behavior he basically means the way the system/machine behaves, what it 
+does. And no wonder this is usually what the shareholders mostly care about, 
+that the specific functional requirements are working.
+
+But then you have structure. And by structure, he means how malleable the 
+system is. He explains that "software" is meant to be, well, _soft_, in the 
+sense that it should be easy to change (and goes on to say something I could 
+very well say, that otherwise it would be _"hard-ware"_).
+
+Using "extremes" as a logical argument, he explains that an impossible to 
+change software that is working correctly, will stop working when requirements 
+change, and at that point it will become forever useless, while on the other 
+hand, an easily changeable software that is not working, can easily be made to 
+work, and can keep working even when requirements change.
+
+Even if you don't go to extremes, there are very important considerations for 
+hard-to-change systems: productivity tends towards zero, while cost tends 
+towards infinity. This is because it becomes exponentially harder to change, 
+thus more developers and more senior ones are needed to make ever smaller 
+features. Your cost-per-feature and time-to-completion grow exponentially.
+
+When shown with real data graphs, it honestly becomes alarming. And having 
+lived it myself, I can only heartwholedly agree with him. In the race between 
+the Hare and the Turtle, don't ever listen to the Hare, trying to keep pushing 
+productivity without caring about technical debt. And, quoting Robert:
+
+_"The developers may think that the answer is to start over from scratch and_ 
+_redesign the whole system, but that's just the Hare talking again. THe same_ 
+_overconfidence that led to the mess is now telling them that they can build_ 
+_it better if only they can start the race over. The reality is less rosy:_
+
+_**Their overconfidence will drive the redesign into the same mess as the original project.**"_
+
 ## References
 
 - _Fielding, R. T. (2000). Architectural styles and the design of network-based software architectures [Doctoral dissertation, University of California, Irvine]._
 - _Sommerville, I. (2016). Software engineering (10th ed.). Pearson._
 - _Kleppmann, M. (2017). Designing data-intensive applications. O'Reilly Media, Inc._
+- _Martin, R., C., (2017). Clean architecture. Prentice hall._
 - _Khononov, . (2021). Learning domain-driven design. O'Reilly Media, Inc._
 - _Poltorak, D. (2025). Architectural metapatterns: The pattern language of software architecture (Version 1.0). GitHub. Retrieved from https://github.com/denyspoltorak/metapatterns/blob/main/ArchitecturalMetapatterns/Architectural%20Metapatterns.pdf._
 - _Wilson, G. (2025). The architecture of open source applications. Website. Retrieved from https://aosabook.org/en_
