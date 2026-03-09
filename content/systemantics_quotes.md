@@ -1,9 +1,9 @@
-Title: Systemantics
+Title: Systemantics Quotes
 Date: 2026-03-07
 Modified: 2026-03-07
 Category: Articles
 Tags: systems, software, engineering
-Slug: systemantics
+Slug: systemantics-quotes
 Authors: Juan José Farina
 Summary: A short enumeration of quotes from Jhon Gall's book Systemantics which serve as principles for system design
 Keywords: software, development, engineering, systems
