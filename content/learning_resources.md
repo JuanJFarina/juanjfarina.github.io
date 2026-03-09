@@ -20,7 +20,7 @@ _Note: this will be updated over time_
 
 <p> 
   <script>
-    document.write(Math.floor(Math.random() * 57) + 1);
+    document.write(Math.floor(Math.random() * 58) + 1);
   </script>
 </p>Time to go study it !
 
@@ -30,7 +30,7 @@ _Note: this will be updated over time_
 
 - Paradigms: [Structured](https://en.wikipedia.org/wiki/Structured_programming), [Procedural](https://en.wikipedia.org/wiki/Procedural_programming), [Functional](https://en.wikipedia.org/wiki/Functional_programming), [Object Oriented](https://en.wikipedia.org/wiki/Object-oriented_programming)
 
-- Databases: [Transaction](https://en.wikipedia.org/wiki/Database_transaction), [Cursor](<https://en.wikipedia.org/wiki/Cursor_(databases)>), [Normalization](https://en.wikipedia.org/wiki/Database_normalization)
+- Databases: [DBMS](https://en.wikipedia.org/wiki/Database#Database_management_system), [Transaction](https://en.wikipedia.org/wiki/Database_transaction), [Cursor](<https://en.wikipedia.org/wiki/Cursor_(databases)>), [Normalization](https://en.wikipedia.org/wiki/Database_normalization), [Database Model](https://en.wikipedia.org/wiki/Database_model), [Data Model](https://en.wikipedia.org/wiki/Data_model)
 
 - [Behavior-Driven Design](https://en.wikipedia.org/wiki/Behavior-driven_development), [Design-by-Contract](https://en.wikipedia.org/wiki/Design_by_contract), [Doman-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design), [Test-Driven Development](https://en.wikipedia.org/wiki/Test-driven_development)
 
@@ -122,54 +122,56 @@ Data validation and serialization
 
 35: [Pydantic](https://docs.pydantic.dev/latest/concepts/models/)
 
+36: [Pydantic-settings](https://docs.pydantic.dev/latest/concepts/pydantic_settings/)
+
 Database
 
-36: [SQLite (DB Driver)](https://docs.python.org/3/library/sqlite3.html)
+37: [SQLite (DB Driver)](https://docs.python.org/3/library/sqlite3.html)
 
-37: [Psycopg (DB Driver)](https://www.psycopg.org/docs/index.html#)
+38: [Psycopg (DB Driver)](https://www.psycopg.org/docs/index.html#)
 
-38: [AsyncPG (DB Driver)](https://magicstack.github.io/asyncpg/current/usage.html)
+39: [AsyncPG (DB Driver)](https://magicstack.github.io/asyncpg/current/usage.html)
 
-39: [SQLAlchemy (DB Driver abstraction)](https://docs.sqlalchemy.org/en/20/)
+40: [SQLAlchemy (DB Driver abstraction)](https://docs.sqlalchemy.org/en/20/)
 
-40: [SQLModel](https://sqlmodel.tiangolo.com/learn/)
+41: [SQLModel](https://sqlmodel.tiangolo.com/learn/)
 
-41: [Alembic](https://alembic.sqlalchemy.org/en/latest/tutorial.html)
+42: [Alembic](https://alembic.sqlalchemy.org/en/latest/tutorial.html)
 
 Logging
 
-42: [Loguru](https://loguru.readthedocs.io/en/stable/resources.html)
+43: [Loguru](https://loguru.readthedocs.io/en/stable/resources.html)
 
 Data analysis
 
-43: [Numpy](https://numpy.org/devdocs/user/index.html)
+44: [Numpy](https://numpy.org/devdocs/user/index.html)
 
-44: [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
+45: [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
 
-45: [Polars](https://docs.pola.rs)
+46: [Polars](https://docs.pola.rs)
 
 ## Standards & Protocols
 
-46: [ASGI](https://asgi.readthedocs.io/en/latest/index.html)
+47: [ASGI](https://asgi.readthedocs.io/en/latest/index.html)
 
-47: [OpenAPI](https://learn.openapis.org/specification/)
+48: [OpenAPI](https://learn.openapis.org/specification/)
 
-48: [OAuth 2.0](https://oauth.net/2/)
+49: [OAuth 2.0](https://oauth.net/2/)
 
-49: [OpenID Connect (OIDC)](https://openid.net/specs/openid-connect-core-1_0.html)
+50: [OpenID Connect (OIDC)](https://openid.net/specs/openid-connect-core-1_0.html)
 
-50: [OpenTelemetry (OTel)](https://opentelemetry.io/docs/)
+51: [OpenTelemetry (OTel)](https://opentelemetry.io/docs/)
 
-51: [Secure Sockets Layer (SSL)](https://datatracker.ietf.org/doc/html/rfc6101)
+52: [Secure Sockets Layer (SSL)](https://datatracker.ietf.org/doc/html/rfc6101)
 
-52: [Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc8446)
+53: [Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc8446)
 
-53: [REST](https://en.wikipedia.org/wiki/REST#Architectural_constraints)
+54: [REST](https://en.wikipedia.org/wiki/REST#Architectural_constraints)
 
-54: [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455)
+55: [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455)
 
-55: [gRPC](https://grpc.io)
+56: [gRPC](https://grpc.io)
 
-56: [Server-Sent-Event](https://html.spec.whatwg.org/multipage/server-sent-events.html)
+57: [Server-Sent-Event](https://html.spec.whatwg.org/multipage/server-sent-events.html)
 
-57: [GraphQL](https://graphql.org/learn/introduction/)
+58: [GraphQL](https://graphql.org/learn/introduction/)
