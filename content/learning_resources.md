@@ -1,6 +1,6 @@
 Title: Learning Resources
 Date: 2026-02-18
-Modified: 2026-02-28
+Modified: 2026-03-12
 Category: Articles
 Tags: python, backend, mlops, data science, data analysis, data engineering
 Slug: learning-resources
@@ -20,7 +20,7 @@ _Note: this will be updated over time_
 
 <p> 
   <script>
-    document.write(Math.floor(Math.random() * 58) + 1);
+    document.write(Math.floor(Math.random() * 59) + 1);
   </script>
 </p>Time to go study it !
 
@@ -166,12 +166,14 @@ Data analysis
 
 53: [Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc8446)
 
-54: [REST](https://en.wikipedia.org/wiki/REST#Architectural_constraints)
+54: [Secure Shell (SSH)](https://es.wikipedia.org/wiki/Secure_Shell)
 
-55: [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455)
+55: [REST](https://en.wikipedia.org/wiki/REST#Architectural_constraints)
 
-56: [gRPC](https://grpc.io)
+56: [WebSocket](https://datatracker.ietf.org/doc/html/rfc6455)
 
-57: [Server-Sent-Event](https://html.spec.whatwg.org/multipage/server-sent-events.html)
+57: [gRPC](https://grpc.io)
 
-58: [GraphQL](https://graphql.org/learn/introduction/)
+58: [Server-Sent-Event](https://html.spec.whatwg.org/multipage/server-sent-events.html)
+
+59: [GraphQL](https://graphql.org/learn/introduction/)

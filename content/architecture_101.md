@@ -494,7 +494,7 @@ replicate any state of the system, not only the current.
 
 ## Domain Driven Design
 
-DDD, as it name implies, is an architecture design philosophy that puts the 
+DDD, as its name implies, is an architecture design philosophy that puts the 
 business domain in the center of the design. It's not uncommon to hear older 
 engineers say "first, design your data models and choose your database", which 
 is a database-centric approach, but this shifted when complexity in business 
@@ -554,7 +554,7 @@ the Hare and the Turtle, don't ever listen to the Hare, trying to keep pushing
 productivity without caring about technical debt. And, quoting Robert:
 
 _"The developers may think that the answer is to start over from scratch and_ 
-_redesign the whole system, but that's just the Hare talking again. THe same_ 
+_redesign the whole system, but that's just the Hare talking again. The same_ 
 _overconfidence that led to the mess is now telling them that they can build_ 
 _it better if only they can start the race over. The reality is less rosy:_
 
